@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Songbook | ISKCON Birnagar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-stone-50 text-stone-800 font-sans" x-data="{ activeSong: null }">
+
+    <nav class="bg-white shadow-sm p-4 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-2 font-bold hover:text-saffron-600">
+                <i class="fas fa-arrow-left"></i> Home
+            </a>
+            <span class="font-serif font-bold text-xl">Vaishnava Songbook</span>
+        </div>
+    </nav>
+
+    <div class="max-w-3xl mx-auto py-12 px-4">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-serif font-bold mb-2">Songs of Bhaktivinoda</h1>
+            <p class="text-stone-500">Click on a song to view lyrics and translation.</p>
+        </div>
+
+        <div class="space-y-4">
+            
+            <div @click="activeSong = 1" class="bg-white p-4 rounded-lg shadow hover:shadow-md cursor-pointer flex justify-between items-center group transition hover:bg-stone-50 transform hover:scale-[1.01]">
+                <div class="flex items-center gap-4">
+                    <span class="text-saffron-500 font-bold font-serif text-xl">01</span>
+                    <div>
+                        <h3 class="font-bold text-lg group-hover:text-saffron-600">Jaya Radha Madhava</h3>
+                        <p class="text-xs text-stone-400">Gitavali</p>
+                    </div>
+                </div>
+                <i class="fas fa-book-open text-stone-300 group-hover:text-saffron-500"></i>
+            </div>
+
+            <div @click="activeSong = 2" class="bg-white p-4 rounded-lg shadow hover:shadow-md cursor-pointer flex justify-between items-center group transition hover:bg-stone-50 transform hover:scale-[1.01]">
+                <div class="flex items-center gap-4">
+                    <span class="text-saffron-500 font-bold font-serif text-xl">02</span>
+                    <div>
+                        <h3 class="font-bold text-lg group-hover:text-saffron-600">Gopinath</h3>
+                        <p class="text-xs text-stone-400">Kalyana Kalpataru</p>
+                    </div>
+                </div>
+                <i class="fas fa-book-open text-stone-300 group-hover:text-saffron-500"></i>
+            </div>
+
+             <div @click="activeSong = 3" class="bg-white p-4 rounded-lg shadow hover:shadow-md cursor-pointer flex justify-between items-center group transition hover:bg-stone-50 transform hover:scale-[1.01]">
+                <div class="flex items-center gap-4">
+                    <span class="text-saffron-500 font-bold font-serif text-xl">03</span>
+                    <div>
+                        <h3 class="font-bold text-lg group-hover:text-saffron-600">Arunodaya Kirtan</h3>
+                        <p class="text-xs text-stone-400">Gitavali</p>
+                    </div>
+                </div>
+                <i class="fas fa-book-open text-stone-300 group-hover:text-saffron-500"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <div x-show="activeSong !== null" 
+         style="display: none;"
+         class="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/90 backdrop-blur-sm p-4"
+         x-transition.opacity>
+        
+        <div class="bg-white w-full max-w-lg rounded-xl overflow-hidden shadow-2xl relative max-h-[80vh] flex flex-col" @click.away="activeSong = null">
+            <div class="bg-saffron-500 p-4 text-white flex justify-between items-center">
+                <h3 class="font-bold text-lg">Song Lyrics</h3>
+                <button @click="activeSong = null"><i class="fas fa-times text-xl"></i></button>
+            </div>
+
+            <div class="p-8 overflow-y-auto font-serif text-center space-y-6">
+                
+                <template x-if="activeSong === 1">
+                    <div>
+                        <h2 class="text-2xl font-bold text-saffron-600 mb-4">Jaya Radha Madhava</h2>
+                        <p class="italic mb-4 text-stone-500">(jaya) radha-madhava (jaya) kunja-bihari<br>(jaya) gopi-jana-vallabha (jaya) giri-vara-dhari</p>
+                        <hr class="w-16 mx-auto border-saffron-200 mb-4">
+                        <p class="text-sm text-stone-600">Translation: Krishna is the lover of Radha. He displays many amorous pastimes in the groves of Vrndavana.</p>
+                    </div>
+                </template>
+
+                <template x-if="activeSong === 2">
+                    <div>
+                        <h2 class="text-2xl font-bold text-saffron-600 mb-4">Gopinath</h2>
+                        <p class="italic mb-4 text-stone-500">gopinath, mama nivedana suno<br>visayi durjana, sada kama-rata, kichu nahi mora guna</p>
+                        <hr class="w-16 mx-auto border-saffron-200 mb-4">
+                        <p class="text-sm text-stone-600">Translation: O Gopinatha, Lord of the gopis, please hear my request. I am a wicked materialist, always addicted to worldly desires, and no good qualities do I possess.</p>
+                    </div>
+                </template>
+                
+                 <template x-if="activeSong === 3">
+                    <div>
+                        <h2 class="text-2xl font-bold text-saffron-600 mb-4">Arunodaya Kirtan</h2>
+                        <p class="italic mb-4 text-stone-500">udilo aruna puraba-bhage,<br>dwija-mani gora amani jage</p>
+                        <hr class="w-16 mx-auto border-saffron-200 mb-4">
+                        <p class="text-sm text-stone-600">Translation: When the rising sun appeared in the East, the jewel of the twice-born, Lord Gaurasundara, awakened.</p>
+                    </div>
+                </template>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
