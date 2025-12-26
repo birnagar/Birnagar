@@ -58,7 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
 //     // Shared logic can go here
 });
 
-    const openingDay = new Date('November 2, 2030 00:00:00').getTime();
+// 3. Countdown Timer Logic
+    const openingDay = new Date('June 1, 2026 00:00:00').getTime();
 
     const updateCountdown = setInterval(() => {
         const now = new Date().getTime();
