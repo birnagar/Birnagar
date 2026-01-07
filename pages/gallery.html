@@ -1,50 +1,811 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Darshan Gallery | ISKCON Birnagar</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Birnagar</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <script src="../assets/js/main.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body class="bg-stone-50 text-stone-800 font-sans">
 
-    <nav class="bg-white shadow-sm p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="../index.html" class="flex items-center gap-2 font-bold hover:text-saffron-600">
-                <i class="fas fa-arrow-left"></i> Home
-            </a>
-            <span class="font-serif font-bold text-xl">Gallery</span>
-        </div>
-    </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    <div class="max-w-7xl mx-auto py-12 px-4">
-        <h1 class="text-4xl font-serif font-bold text-center mb-12">Holy Dhama Darshan</h1>
+    <style>
+      /* Saffron 500 Background */
+      body {
+        color: #0c0a09;
+      }
+      .text-heading {
+        color: oklch(37.4% 0.01 67.558);
+      }
+      .bg-stone-card {
+        background-color: #ffffff;
+      }
+      /* Custom Scrollbar for horizontal scrolling */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="text-stone-200 bg-orange-50 font-[googleSans]"
+    style="font-family: 'Google Sans Flex', sans-serif"
+  >
+    <div class="w-full overflow-hidden border-b border-stone-900/10 relative">
+      <div class="flex w-fit animate-marquee hover:pause py-2">
+        <span
+          class="whitespace-nowrap px-4 text-xs md:text-xs font-light italic tracking-wider text-stone-950"
+        >
+          <span class="font-bold">Chant:</span> Hare Krishna Hare Krishna
+          Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare
+          &nbsp; <span class="font-bold">and be happy</span> &nbsp;
+          <span class="text-stone-700 mx-4">•</span> &nbsp;
+          <span class="font-bold">Chant:</span> Hare Krishna Hare Krishna
+          Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare
+          &nbsp; <span class="font-bold">and be happy</span> &nbsp;
+          <span class="text-stone-700 mx-4">•</span> &nbsp;
+          <span class="font-bold">Chant:</span> Hare Krishna Hare Krishna
+          Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare
+          &nbsp; <span class="font-bold">and be happy</span> &nbsp;
+          <span class="text-stone-700 mx-4">•</span> &nbsp;
+        </span>
 
-        <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 reveal">
-            
-            <div class="break-inside-avoid rounded-lg overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1564998701899-281b95b8600d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white">
-                    <span class="font-bold">Deity Darshan</span>
-                </div>
-            </div>
-
-            <div class="break-inside-avoid rounded-lg overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1621814741362-e64627042302?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-            </div>
-
-            <div class="break-inside-avoid rounded-lg overflow-hidden relative group">
-                <img src="https://images.unsplash.com/photo-1476304884326-cd2c88572c5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-            </div>
-
-            </div>
+        <span
+          class="whitespace-nowrap px-4 text-xs md:text-xs font-light italic tracking-wider text-stone-950"
+        >
+          <span class="font-bold">Chant:</span> Hare Krishna Hare Krishna
+          Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare
+          &nbsp; <span class="font-bold">and be happy</span> &nbsp;
+          <span class="text-stone-700 mx-4">•</span> &nbsp;
+          <span class="font-bold">Chant:</span> Hare Krishna Hare Krishna
+          Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare
+          &nbsp; <span class="font-bold">and be happy</span> &nbsp;
+          <span class="text-stone-700 mx-4">•</span> &nbsp;
+          <span class="font-bold">Chant:</span> Hare Krishna Hare Krishna
+          Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare
+          &nbsp; <span class="font-bold">and be happy</span> &nbsp;
+          <span class="text-stone-700 mx-4">•</span> &nbsp;
+        </span>
+      </div>
     </div>
 
-    <footer class="bg-stone-900 text-stone-400 py-8 text-center mt-12">
-        <p>&copy; 2023 ISKCON Birnagar.</p>
-    </footer>
+    <div class="relative z-10 flex flex-col h-full">
+      <nav
+        x-data="{ open: false }"
+        class="w-full transition-all duration-300 border-white/10"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-20 items-center">
+            <div class="flex-shrink-0 flex items-center gap-3 text-heading">
+              <div>
+                <h1 class="font-serif font-bold text-xl tracking-wide">
+                  Kirtan Seva Trust
+                </h1>
+                <p class="text-xs font-bold uppercase">
+                  Birnagar Temple Project
+                </p>
+              </div>
+            </div>
 
-</body>
+            <div class="hidden md:flex space-x-8 items-center text-heading">
+              <a
+                href="../index.html"
+                class="font-medium pb-1 hover:text-orange-400 text-sm"
+                >HOME</a
+              >
+
+              <div class="relative group">
+                <button
+                  class="text-sm text-orange-400 transition font-bold pb-1 nav-link-underline flex items-center gap-1 uppercase"
+                >
+                  ABOUT
+                  <i
+                    class="fas fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform"
+                  ></i>
+                </button>
+                <div
+                  class="absolute left-0 mt-0 w-64 bg-stone-900/95 backdrop-blur-xl border border-stone-800 rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3"
+                >
+                  <a
+                    href="../pages/who.html"
+                    class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                    >Who is Bhaktivinoda Thakur</a
+                  >
+                  <a
+                    href="../pages/why.html"
+                    class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                    >Why build a Temple</a
+                  >
+                  <a
+                    href="../pages/chairman.html"
+                    class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                    >Chairman's Message</a
+                  >
+                  <a
+                    href="../pages/team.html"
+                    class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                    >Meet the Team</a
+                  >
+                </div>
+              </div>
+
+              <div class="relative group">
+                <button
+                  class="text-sm font-medium hover:text-saffron-500 transition pb-1 nav-link-underline flex items-center gap-1 uppercase"
+                >
+                  VISION
+                  <i
+                    class="fas fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform"
+                  ></i>
+                </button>
+                <div
+                  class="absolute left-0 mt-0 w-64 bg-stone-900/95 backdrop-blur-xl border border-stone-800 rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3"
+                >
+                  <a
+                    href="#"
+                    class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                    >Srila Prabhupada's Vision</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                    >JPS Vision</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                    >Founders Vision</a
+                  >
+                </div>
+              </div>
+
+              <a
+                href="./gallery.html"
+                class="text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline uppercase"
+                >GALLERY</a
+              >
+              <a
+                href="./songs.html"
+                class="text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline uppercase"
+                >SONGS</a
+              >
+              <a
+                href="./donate.html"
+                class="bg-cyan-600 hover:bg-red-600 text-sm text-white px-6 py-2 rounded font-bold transition shadow-lg transform hover:scale-105 uppercase"
+                >Donate Now</a
+              >
+            </div>
+
+            <div class="md:hidden flex items-center">
+              <button
+                @click="open = !open"
+                class="text-stone-800 hover:text-saffron-600 focus:outline-none"
+              >
+                <i class="fas fa-bars text-2xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div
+          class="mb-12"
+          x-data="{ 
+            activeSlide: 0,
+            slides: [
+                { img: 'https://placehold.co/1200x500/FB923C/FFF?text=Gaura+Purnima+Festival', title: 'Gaura Purnima 2024', subtitle: 'The Golden Avatar\'s Appearance' },
+                { img: 'https://placehold.co/1200x500/B45309/FFF?text=Foundation+Laying+Ceremony', title: 'Foundation Stone', subtitle: 'A Historic Beginning' },
+                { img: 'https://placehold.co/1200x500/78350F/FFF?text=Kirtan+Mela', title: '24 Hour Kirtan', subtitle: 'Chanting for World Peace' }
+            ],
+            next() { this.activeSlide = (this.activeSlide === this.slides.length - 1) ? 0 : this.activeSlide + 1 },
+            prev() { this.activeSlide = (this.activeSlide === 0) ? this.slides.length - 1 : this.activeSlide - 1 },
+            init() { setInterval(() => this.next(), 5000) }
+        }"
+        >
+          <div
+            class="relative rounded-3xl overflow-hidden shadow-2xl h-[400px] md:h-[500px] border border-stone-200"
+          >
+            <template x-for="(slide, index) in slides" :key="index">
+              <div
+                x-show="activeSlide === index"
+                x-transition:enter="transition ease-out duration-700"
+                x-transition:enter-start="opacity-0 scale-95"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-300"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-105"
+                class="absolute inset-0 w-full h-full"
+              >
+                <img
+                  :src="slide.img"
+                  :alt="slide.title"
+                  class="w-full h-full object-cover brightness-75"
+                />
+
+                <div
+                  class="absolute bottom-0 left-0 p-8 md:p-16 w-full bg-gradient-to-t from-stone-900/90 to-transparent"
+                >
+                  <span
+                    class="text-saffron-400 font-bold tracking-widest uppercase text-xs mb-2 block"
+                    >Featured Gallery</span
+                  >
+                  <h2
+                    class="text-4xl md:text-5xl font-serif text-white mb-2"
+                    x-text="slide.title"
+                  ></h2>
+                  <p
+                    class="text-stone-300 text-lg font-light italic"
+                    x-text="slide.subtitle"
+                  ></p>
+                </div>
+              </div>
+            </template>
+
+            <button
+              @click="prev()"
+              class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/30 backdrop-blur-md text-white p-4 rounded-full transition"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              @click="next()"
+              class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/30 backdrop-blur-md text-white p-4 rounded-full transition"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="absolute bottom-6 right-6 flex gap-2">
+              <template x-for="(slide, index) in slides" :key="index">
+                <button
+                  @click="activeSlide = index"
+                  class="h-1 rounded-full transition-all duration-300"
+                  :class="activeSlide === index ? 'w-8 bg-saffron-500' : 'w-4 bg-white/50'"
+                ></button>
+              </template>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white p-4 rounded-2xl shadow-sm border border-stone-200 mb-8 sticky top-4 z-40"
+        >
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-4"
+          >
+            <div
+              class="flex items-center gap-2 text-stone-500 text-sm w-full md:w-auto overflow-hidden"
+            >
+              <a href="#" class="hover:text-saffron-600"
+                ><i class="fas fa-home"></i
+              ></a>
+              <i class="fas fa-chevron-right text-[10px] opacity-50"></i>
+              <span class="font-bold text-stone-800 whitespace-nowrap"
+                >Media Gallery</span
+              >
+              <i class="fas fa-chevron-right text-[10px] opacity-50"></i>
+              <span class="bg-stone-100 px-2 py-1 rounded text-xs"
+                >All Folders</span
+              >
+            </div>
+
+            <div class="relative w-full md:w-96">
+              <i
+                class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"
+              ></i>
+              <input
+                type="text"
+                placeholder="Search events, years, or tags..."
+                class="w-full bg-stone-100 border-none rounded-full py-2.5 pl-10 pr-4 text-stone-800 text-sm focus:ring-2 focus:ring-saffron-400 focus:bg-white transition-all"
+              />
+            </div>
+
+            <div class="hidden md:flex gap-1 bg-stone-100 p-1 rounded-lg">
+              <button
+                class="px-3 py-1 bg-white shadow-sm rounded text-stone-800 text-xs font-bold"
+              >
+                <i class="fas fa-th-large mr-1"></i> Grid
+              </button>
+              <button
+                class="px-3 py-1 text-stone-500 hover:text-stone-800 text-xs font-bold"
+              >
+                <i class="fas fa-list mr-1"></i> List
+              </button>
+            </div>
+          </div>
+
+          <div class="flex gap-2 mt-4 overflow-x-auto no-scrollbar pb-1">
+            <button
+              class="px-4 py-1.5 bg-stone-800 text-white rounded-lg text-xs font-bold border border-stone-800 whitespace-nowrap"
+            >
+              All
+            </button>
+            <button
+              class="px-4 py-1.5 bg-white text-stone-600 hover:bg-stone-50 rounded-lg text-xs font-bold border border-stone-200 whitespace-nowrap"
+            >
+              Festivals
+            </button>
+            <button
+              class="px-4 py-1.5 bg-white text-stone-600 hover:bg-stone-50 rounded-lg text-xs font-bold border border-stone-200 whitespace-nowrap"
+            >
+              Construction
+            </button>
+            <button
+              class="px-4 py-1.5 bg-white text-stone-600 hover:bg-stone-50 rounded-lg text-xs font-bold border border-stone-200 whitespace-nowrap"
+            >
+              Deity Worship
+            </button>
+            <button
+              class="px-4 py-1.5 bg-white text-stone-600 hover:bg-stone-50 rounded-lg text-xs font-bold border border-stone-200 whitespace-nowrap"
+            >
+              Historical
+            </button>
+          </div>
+        </div>
+
+        <div class="mb-12">
+          <h3
+            class="text-stone-500 text-xs font-bold uppercase tracking-widest mb-4"
+          >
+            Event Albums
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="group cursor-pointer">
+              <div
+                class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 relative"
+              >
+                <div
+                  class="absolute top-0 left-0 bg-stone-100 w-full h-8 border-b border-stone-100 z-10 flex items-center px-4"
+                >
+                  <i class="fas fa-folder text-amber-500 mr-2"></i>
+                  <span class="text-[10px] text-stone-400 font-bold uppercase"
+                    >245 Items</span
+                  >
+                </div>
+
+                <div class="grid grid-cols-2 gap-0.5 mt-8 h-48 bg-stone-100">
+                  <img
+                    src="https://placehold.co/200x200/222/FFF"
+                    class="w-full h-full object-cover"
+                  />
+                  <img
+                    src="https://placehold.co/200x200/333/FFF"
+                    class="w-full h-full object-cover"
+                  />
+                  <img
+                    src="https://placehold.co/200x200/444/FFF"
+                    class="w-full h-full object-cover"
+                  />
+                  <div class="relative">
+                    <img
+                      src="https://placehold.co/200x200/555/FFF"
+                      class="w-full h-full object-cover blur-[1px]"
+                    />
+                    <div
+                      class="absolute inset-0 flex items-center justify-center bg-black/30 text-white font-bold text-lg"
+                    >
+                      +241
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-4">
+                  <h4
+                    class="font-serif font-bold text-lg text-stone-800 group-hover:text-saffron-600 transition"
+                  >
+                    Janmashtami 2024
+                  </h4>
+                  <p class="text-xs text-stone-500 mt-1">Aug 15 • Festival</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group cursor-pointer">
+              <div
+                class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 relative"
+              >
+                <div
+                  class="absolute top-0 left-0 bg-stone-100 w-full h-8 border-b border-stone-100 z-10 flex items-center px-4"
+                >
+                  <i class="fas fa-folder text-amber-500 mr-2"></i>
+                  <span class="text-[10px] text-stone-400 font-bold uppercase"
+                    >42 Items</span
+                  >
+                </div>
+                <div class="h-48 mt-8 relative overflow-hidden">
+                  <img
+                    src="https://placehold.co/400x300/D97706/FFF?text=Land"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div class="p-4">
+                  <h4
+                    class="font-serif font-bold text-lg text-stone-800 group-hover:text-saffron-600 transition"
+                  >
+                    Land Acquisition
+                  </h4>
+                  <p class="text-xs text-stone-500 mt-1">
+                    Feb 10 • Construction
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group cursor-pointer">
+              <div
+                class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 relative"
+              >
+                <div
+                  class="absolute top-0 left-0 bg-stone-100 w-full h-8 border-b border-stone-100 z-10 flex items-center px-4"
+                >
+                  <i class="fas fa-folder text-amber-500 mr-2"></i>
+                  <span class="text-[10px] text-stone-400 font-bold uppercase"
+                    >108 Items</span
+                  >
+                </div>
+                <div class="h-48 mt-8 relative overflow-hidden">
+                  <img
+                    src="https://placehold.co/400x300/78350F/FFF?text=Deity"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div class="p-4">
+                  <h4
+                    class="font-serif font-bold text-lg text-stone-800 group-hover:text-saffron-600 transition"
+                  >
+                    Daily Darshan
+                  </h4>
+                  <p class="text-xs text-stone-500 mt-1">Ongoing • Worship</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group cursor-pointer">
+              <div
+                class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl transition-all duration-300 relative"
+              >
+                <div
+                  class="absolute top-0 left-0 bg-stone-100 w-full h-8 border-b border-stone-100 z-10 flex items-center px-4"
+                >
+                  <i class="fas fa-folder text-amber-500 mr-2"></i>
+                  <span class="text-[10px] text-stone-400 font-bold uppercase"
+                    >15 Items</span
+                  >
+                </div>
+                <div class="h-48 mt-8 relative overflow-hidden">
+                  <img
+                    src="https://placehold.co/400x300/555/FFF?text=Sketches"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div class="p-4">
+                  <h4
+                    class="font-serif font-bold text-lg text-stone-800 group-hover:text-saffron-600 transition"
+                  >
+                    Architectural Plans
+                  </h4>
+                  <p class="text-xs text-stone-500 mt-1">Jan 01 • Planning</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-12">
+          <h3
+            class="text-stone-500 text-xs font-bold uppercase tracking-widest mb-4"
+          >
+            Recent Highlights
+          </h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div
+              class="aspect-square rounded-xl overflow-hidden relative group"
+            >
+              <img
+                src="https://placehold.co/300x300/111/FFF"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+              >
+                <i class="fas fa-download text-white"></i>
+              </div>
+            </div>
+            <div
+              class="aspect-square rounded-xl overflow-hidden relative group"
+            >
+              <img
+                src="https://placehold.co/300x300/222/FFF"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+              >
+                <i class="fas fa-download text-white"></i>
+              </div>
+            </div>
+            <div
+              class="aspect-square rounded-xl overflow-hidden relative group"
+            >
+              <img
+                src="https://placehold.co/300x300/333/FFF"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+              >
+                <i class="fas fa-download text-white"></i>
+              </div>
+            </div>
+            <div
+              class="aspect-square rounded-xl overflow-hidden relative group"
+            >
+              <img
+                src="https://placehold.co/300x300/444/FFF"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+              >
+                <i class="fas fa-download text-white"></i>
+              </div>
+            </div>
+            <div
+              class="aspect-square rounded-xl overflow-hidden relative group"
+            >
+              <img
+                src="https://placehold.co/300x300/555/FFF"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center"
+              >
+                <i class="fas fa-download text-white"></i>
+              </div>
+            </div>
+            <div
+              class="aspect-square rounded-xl border-2 border-dashed border-stone-300 flex flex-col items-center justify-center text-stone-400 cursor-pointer hover:border-saffron-400 hover:text-saffron-500 transition"
+            >
+              <i class="fas fa-arrow-right text-xl mb-1"></i>
+              <span class="text-[10px] font-bold uppercase">View All</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-stone-900 rounded-[2rem] p-8 md:p-12 text-stone-200">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-8">
+            <div>
+              <h2 class="text-3xl font-serif text-white mb-2">
+                Recorded Kirtans & Lectures
+              </h2>
+              <p class="text-sm opacity-70">
+                Experience the sound vibration of Birnagar.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="text-saffron-400 hover:text-white text-xs font-bold uppercase tracking-widest mt-4 md:mt-0 transition"
+            >
+              Visit YouTube Channel
+              <i class="fas fa-external-link-alt ml-1"></i>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="bg-stone-800 rounded-xl overflow-hidden group cursor-pointer hover:ring-2 hover:ring-saffron-500 transition"
+            >
+              <div class="aspect-video relative">
+                <img
+                  src="https://placehold.co/600x340/333/FFF?text=Kirtan+Video"
+                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition"
+                />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div
+                    class="w-12 h-12 bg-white/20 backdrop-blur rounded-full flex items-center justify-center group-hover:scale-110 transition"
+                  >
+                    <i class="fas fa-play text-white"></i>
+                  </div>
+                </div>
+                <div
+                  class="absolute bottom-2 right-2 bg-black/70 px-2 py-0.5 rounded text-[10px] font-bold"
+                >
+                  12:30
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="font-bold text-white text-sm line-clamp-1">
+                  Sunday Feast Kirtan
+                </h4>
+                <p class="text-xs text-stone-500 mt-1">2 days ago</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-stone-800 rounded-xl overflow-hidden group cursor-pointer hover:ring-2 hover:ring-saffron-500 transition"
+            >
+              <div class="aspect-video relative">
+                <img
+                  src="https://placehold.co/600x340/444/FFF?text=Lecture"
+                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition"
+                />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div
+                    class="w-12 h-12 bg-white/20 backdrop-blur rounded-full flex items-center justify-center group-hover:scale-110 transition"
+                  >
+                    <i class="fas fa-play text-white"></i>
+                  </div>
+                </div>
+                <div
+                  class="absolute bottom-2 right-2 bg-black/70 px-2 py-0.5 rounded text-[10px] font-bold"
+                >
+                  45:10
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="font-bold text-white text-sm line-clamp-1">
+                  Bhaktivinoda Thakur's Life
+                </h4>
+                <p class="text-xs text-stone-500 mt-1">1 week ago</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-stone-800 rounded-xl overflow-hidden group cursor-pointer hover:ring-2 hover:ring-saffron-500 transition"
+            >
+              <div class="aspect-video relative">
+                <img
+                  src="https://placehold.co/600x340/555/FFF?text=Update"
+                  class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition"
+                />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div
+                    class="w-12 h-12 bg-white/20 backdrop-blur rounded-full flex items-center justify-center group-hover:scale-110 transition"
+                  >
+                    <i class="fas fa-play text-white"></i>
+                  </div>
+                </div>
+                <div
+                  class="absolute bottom-2 right-2 bg-black/70 px-2 py-0.5 rounded text-[10px] font-bold"
+                >
+                  05:20
+                </div>
+              </div>
+              <div class="p-4">
+                <h4 class="font-bold text-white text-sm line-clamp-1">
+                  Construction Update #4
+                </h4>
+                <p class="text-xs text-stone-500 mt-1">2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="bg-stone-900 text-stone-400 pt-16 pb-8 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h4 class="text-white font-serif text-xl font-bold mb-4">
+              Birnagar Temple Project
+            </h4>
+            <p class="text-sm mb-4">
+              Dedicated to the lotus feet of Srila Bhaktivinoda Thakur and Srila
+              Prabhupada.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-white hover:text-saffron-500 transition"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white hover:text-saffron-500 transition"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white hover:text-saffron-500 transition"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-bold mb-4 uppercase text-sm tracking-wider"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#about" class="hover:text-saffron-500 transition"
+                  >Our History</a
+                >
+              </li>
+              <li>
+                <a href="#events" class="hover:text-saffron-500 transition"
+                  >Festival Calendar</a
+                >
+              </li>
+              <li>
+                <a href="#songs" class="hover:text-saffron-500 transition"
+                  >Vaishnava Songs</a
+                >
+              </li>
+              <li>
+                <a href="#donate" class="hover:text-saffron-500 transition"
+                  >Donate</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-bold mb-4 uppercase text-sm tracking-wider"
+            >
+              Contact
+            </h4>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <i class="fas fa-map-marker-alt w-5"></i> Birnagar, Nadia, West
+                Bengal
+              </li>
+              <li><i class="fas fa-phone w-5"></i> +91 98765 43210</li>
+              <li>
+                <i class="fas fa-envelope w-5"></i> info@iskconbirnagar.com
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-bold mb-4 uppercase text-sm tracking-wider"
+            >
+              Newsletter
+            </h4>
+            <form class="flex flex-col gap-2">
+              <input
+                type="email"
+                placeholder="Your Email Address"
+                class="bg-stone-800 border-none rounded p-2 text-white focus:ring-2 focus:ring-saffron-500"
+              />
+              <button
+                class="bg-saffron-500 text-white font-bold py-2 rounded hover:bg-saffron-600 transition"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="border-t border-stone-800 pt-8 text-center text-xs">
+          <p>
+            &copy; 2023 Birnagar Temple Project. All rights reserved. | Built
+            with Devotion.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

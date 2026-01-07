@@ -1,155 +1,180 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISKCON Birnagar | Birthplace of Srila Bhaktivinoda Thakur</title>
-    
-    <meta name="description" content="Official website of ISKCON Birnagar. Join us in rebuilding the holy birthplace of Srila Bhaktivinoda Thakur. Donate, learn, and chant.">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birnagar | Birthplace of Srila Bhaktivinoda Thakur</title>
+
+    <meta
+      name="description"
+      content="Official website of Birnagar Temple Project. Join us in rebuilding the holy birthplace of Srila Bhaktivinoda Thakur. Donate, learn, and chant."
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <script src="assets/js/main.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <style>
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #D4AF37;
-            border-radius: 5px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #b59223;
-        }
-        .text-shadow {
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        .glass-nav {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-        }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d4af37;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #b59223;
+      }
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+      }
     </style>
 
     <style>
-    /* ... (Existing styles for .reveal, etc. go here) ... */
+      /* ... (Existing styles for .reveal, etc. go here) ... */
 
-        @keyframes scroll-right {
-            from {
-                transform: translateX(-50%);
-            }
-            to {
-                transform: translateX(0);
-            }
+      @keyframes scroll-right {
+        from {
+          transform: translateX(-50%);
         }
-
-        .scrolling-text-container {
-            animation: scroll-right 30s linear infinite; /* Adjust '30s' to change speed */
-            display: inline-block;
-            padding-left: 100%;
-            /* Ensures the container respects the animation flow */
+        to {
+          transform: translateX(0);
         }
+      }
 
+      .scrolling-text-container {
+        animation: scroll-right 30s linear infinite; /* Adjust '30s' to change speed */
+        display: inline-block;
+        padding-left: 100%;
+        /* Ensures the container respects the animation flow */
+      }
 
-    /*CSS for gallery section*/
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
+      /*CSS for gallery section*/
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
         display: none;
-    }
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
-    
-    /* Clean horizontal scroll for mobile */
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
 
-    /* Lighter, smoother scroll hint animation */
-    @keyframes scroll-hint {
-        0% { transform: translateX(-100%); }
-        100% { transform: translateX(200%); }
-    }
-    .animate-scroll-hint {
+      /* Clean horizontal scroll for mobile */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Lighter, smoother scroll hint animation */
+      @keyframes scroll-hint {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(200%);
+        }
+      }
+      .animate-scroll-hint {
         animation: scroll-hint 3s infinite ease-in-out;
-    }
+      }
 
-    /* Soften the card border glow on hover */
-    .group:hover {
+      /* Soften the card border glow on hover */
+      .group:hover {
         border-color: rgba(245, 158, 11, 0.4);
         box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-    }
-
+      }
     </style>
     <style>
-/* ... your existing custom styles (scrollbar, text-shadow, glass-nav) are here ... */
+      /* ... your existing custom styles (scrollbar, text-shadow, glass-nav) are here ... */
 
-.nav-link-underline {
-    /* Required for the absolute line element */
-    position: relative;
-    /* Hide the line before hover */
-    overflow: hidden; 
-}
+      .nav-link-underline {
+        /* Required for the absolute line element */
+        position: relative;
+        /* Hide the line before hover */
+        overflow: hidden;
+      }
 
-.nav-link-underline::after {
-    /* Create the actual underline element */
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px; /* Thickness of the line */
-    bottom: 0;
-    left: 0;
-    
-    /* Use the Tailwind Saffron color */
-    background-color: #FF9933; /* saffron-500 */ 
-    
-    /* Start the line at 0 width (hidden) */
-    transform: scaleX(0);
-    transform-origin: bottom left;
-    
-    /* Animation transition */
-    transition: transform 0.3s ease-out;
-}
+      .nav-link-underline::after {
+        /* Create the actual underline element */
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px; /* Thickness of the line */
+        bottom: 0;
+        left: 0;
 
-.nav-link-underline:hover::after {
-    /* Stretch the line to 100% width on hover */
-    transform: scaleX(1);
-}
-</style>
-<style>
-/* ... (your existing nav-link-underline CSS) ... */
+        /* Use the Tailwind Saffron color */
+        background-color: #ff9933; /* saffron-500 */
 
-.nav-link-active {
-    /* Sets the persistent saffron text color */
-    color: #FF9933 !important; /* saffron-500 color */
-    
-    /* Required for the underline pseudo-element */
-    position: relative;
-    
-    /* Adds the permanent underline */
-    border-bottom: 2px solid #FF9933; /* saffron-500 border */
-}
+        /* Start the line at 0 width (hidden) */
+        transform: scaleX(0);
+        transform-origin: bottom left;
 
-/* We need to override the hover effect for the active link 
+        /* Animation transition */
+        transition: transform 0.3s ease-out;
+      }
+
+      .nav-link-underline:hover::after {
+        /* Stretch the line to 100% width on hover */
+        transform: scaleX(1);
+      }
+    </style>
+    <style>
+      /* ... (your existing nav-link-underline CSS) ... */
+
+      .nav-link-active {
+        /* Sets the persistent saffron text color */
+        color: #ff9933 !important; /* saffron-500 color */
+
+        /* Required for the underline pseudo-element */
+        position: relative;
+
+        /* Adds the permanent underline */
+        border-bottom: 2px solid #ff9933; /* saffron-500 border */
+      }
+
+      /* We need to override the hover effect for the active link 
    so the hover doesn't interfere with the permanent look */
-.nav-link-active:hover::after {
-    transform: scaleX(0); 
-}
-</style>
-<!-- 
+      .nav-link-active:hover::after {
+        transform: scaleX(0);
+      }
+    </style>
+    <!-- 
 <style>
     /* --- Animations --- */
     @keyframes float {
@@ -235,353 +260,923 @@
     .planet-mystic { opacity: 0.5; }
 </style> -->
 
-<style>
-    /* --- 1. Planet Animations & Styles (Same as before) --- */
-    @keyframes float {
-        0%, 100% { transform: translateY(0px) rotate(0deg); }
-        50% { transform: translateY(-20px) rotate(5deg); }
-    }
-    .planet {
-        position: absolute; border-radius: 50%; overflow: hidden;
-        mix-blend-mode: screen; pointer-events: none; will-change: transform;
-    }
-    .planet::before, .planet::after { content: ''; position: absolute; inset: 0; border-radius: 50%; }
-    
-    /* Lighting Layer */
-    .planet::after {
-        background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2), rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.9));
-        box-shadow: inset -10px -10px 20px rgba(0,0,0,0.9);
-    }
-    /* Saffron Planet Texture */
-    .planet-saffron::before {
-        background-color: #d97706; 
-        background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.1) 0, transparent 20px),
-                          repeating-radial-gradient(circle at 20% 80%, rgba(120,53,15,0.3), transparent 30%);
-        filter: blur(1px) contrast(1.2);
-    }
-    /* Stone Planet Texture */
-    .planet-stone::before {
-        background-color: #57534e;
-        background-image: radial-gradient(circle at 50% 50%, rgba(0,0,0,0.3) 5%, transparent 20%);
-        filter: contrast(1.1);
-    }
+    <style>
+      /* --- 1. Planet Animations & Styles (Same as before) --- */
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(5deg);
+        }
+      }
+      .planet {
+        position: absolute;
+        border-radius: 50%;
+        overflow: hidden;
+        mix-blend-mode: screen;
+        pointer-events: none;
+        will-change: transform;
+      }
+      .planet::before,
+      .planet::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+      }
 
-    /* --- 2. NEW: Scroll Reveal Animations --- */
-    .reveal {
+      /* Lighting Layer */
+      .planet::after {
+        background: radial-gradient(
+          circle at 30% 30%,
+          rgba(255, 255, 255, 0.2),
+          rgba(0, 0, 0, 0.4) 50%,
+          rgba(0, 0, 0, 0.9)
+        );
+        box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.9);
+      }
+      /* Saffron Planet Texture */
+      .planet-saffron::before {
+        background-color: #d97706;
+        background-image: repeating-linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 0,
+            transparent 20px
+          ),
+          repeating-radial-gradient(
+            circle at 20% 80%,
+            rgba(120, 53, 15, 0.3),
+            transparent 30%
+          );
+        filter: blur(1px) contrast(1.2);
+      }
+      /* Stone Planet Texture */
+      .planet-stone::before {
+        background-color: #57534e;
+        background-image: radial-gradient(
+          circle at 50% 50%,
+          rgba(0, 0, 0, 0.3) 5%,
+          transparent 20%
+        );
+        filter: contrast(1.1);
+      }
+
+      /* --- 2. NEW: Scroll Reveal Animations --- */
+      .reveal {
         opacity: 0;
         transform: translateY(30px);
         transition: all 1s cubic-bezier(0.5, 0, 0, 1);
-    }
-    .reveal.active {
+      }
+      .reveal.active {
         opacity: 1;
         transform: translateY(0);
-    }
+      }
 
-    /* --- 3. Timeline Beam Effect --- */
-    .timeline-beam {
-        background: linear-gradient(to bottom, 
-            transparent 0%, 
-            #f59e0b 20%, 
-            #f59e0b 80%, 
-            transparent 100%
+      /* --- 3. Timeline Beam Effect --- */
+      .timeline-beam {
+        background: linear-gradient(
+          to bottom,
+          transparent 0%,
+          #f59e0b 20%,
+          #f59e0b 80%,
+          transparent 100%
         );
         box-shadow: 0 0 15px #f59e0b;
-    }
-</style>
+      }
+    </style>
+  </head>
 
-</head>
-
-
-<!-- //Header!!!!! -->
-<body class="bg-stone-50 text-stone-800 antialiased" style="font-family: 'Google Sans Flex', sans-serif;">
-
+  <!-- //Header!!!!! -->
+  <body
+    class="bg-stone-50 text-stone-800 antialiased"
+    style="font-family: 'Google Sans Flex', sans-serif"
+  >
     <div class="relative w-full h-screen overflow-hidden flex flex-col">
-        
-        <div class="absolute inset-0 z-0">
-            <img src="assets/images/temple-background.png" alt="Temple Background" class="w-full h-full object-cover">
-            
-            <div class="absolute inset-0 bg-gradient-to-b from-stone-900/90 via-stone-900/50 to-transparent"></div>
+      <div class="absolute inset-0 z-0">
+        <img
+          src="assets/images/temple-background.png"
+          alt="Temple Background"
+          class="w-full h-full object-cover"
+        />
+
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-stone-900/90 via-stone-900/50 to-transparent"
+        ></div>
+      </div>
+
+      <div class="w-full overflow-hidden border-b border-white/10 relative">
+        <div class="flex w-fit animate-marquee hover:pause py-2">
+          <span
+            class="whitespace-nowrap px-4 text-xs md:text-xs font-light italic tracking-wider text-stone-200"
+          >
+            <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna
+            Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama
+            Rama Hare Hare &nbsp;
+            <span class="text-saffron-400 font-bold">and be happy</span> &nbsp;
+            <span class="text-stone-400 mx-4">•</span> &nbsp;
+            <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna
+            Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama
+            Rama Hare Hare &nbsp;
+            <span class="text-saffron-400 font-bold">and be happy</span> &nbsp;
+            <span class="text-stone-400 mx-4">•</span> &nbsp;
+            <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna
+            Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama
+            Rama Hare Hare &nbsp;
+            <span class="text-saffron-400 font-bold">and be happy</span> &nbsp;
+            <span class="text-stone-400 mx-4">•</span> &nbsp;
+          </span>
+
+          <span
+            class="whitespace-nowrap px-4 text-xs md:text-xs font-light italic tracking-wider text-stone-200"
+          >
+            <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna
+            Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama
+            Rama Hare Hare &nbsp;
+            <span class="text-saffron-400 font-bold">and be happy</span> &nbsp;
+            <span class="text-stone-400 mx-4">•</span> &nbsp;
+            <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna
+            Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama
+            Rama Hare Hare &nbsp;
+            <span class="text-saffron-400 font-bold">and be happy</span> &nbsp;
+            <span class="text-stone-400 mx-4">•</span> &nbsp;
+            <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna
+            Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama
+            Rama Hare Hare &nbsp;
+            <span class="text-saffron-400 font-bold">and be happy</span> &nbsp;
+            <span class="text-stone-400 mx-4">•</span> &nbsp;
+          </span>
         </div>
+      </div>
 
-            <div class="w-full overflow-hidden border-b border-white/10 relative">
-                <div class="flex w-fit animate-marquee hover:pause py-2">
-                    
-                    <span class="whitespace-nowrap px-4 text-xs md:text-xs font-light italic tracking-wider text-stone-200">
-                        <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare &nbsp; <span class="text-saffron-400 font-bold">and be happy</span> &nbsp; <span class="text-stone-400 mx-4">•</span> &nbsp;
-                        <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare &nbsp; <span class="text-saffron-400 font-bold">and be happy</span> &nbsp; <span class="text-stone-400 mx-4">•</span> &nbsp;
-                        <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare &nbsp; <span class="text-saffron-400 font-bold">and be happy</span> &nbsp; <span class="text-stone-400 mx-4">•</span> &nbsp;
-                    </span>
-
-                    <span class="whitespace-nowrap px-4 text-xs md:text-xs font-light italic tracking-wider text-stone-200">
-                        <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare &nbsp; <span class="text-saffron-400 font-bold">and be happy</span> &nbsp; <span class="text-stone-400 mx-4">•</span> &nbsp;
-                        <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare &nbsp; <span class="text-saffron-400 font-bold">and be happy</span> &nbsp; <span class="text-stone-400 mx-4">•</span> &nbsp;
-                        <span class="text-saffron-400 font-bold">Chant:</span> Hare Krishna Hare Krishna Krishna Krishna Hare Hare, Hare Rama Hare Rama Rama Rama Hare Hare &nbsp; <span class="text-saffron-400 font-bold">and be happy</span> &nbsp; <span class="text-stone-400 mx-4">•</span> &nbsp;
-                    </span>
-
-                </div>
-            </div>
-
-        <div class="relative z-10 flex flex-col h-full">
-
-            <nav x-data="{ open: false }" class="w-full transition-all duration-300 border-white/10">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="flex justify-between h-20 items-center">
-                        
-                        <div class="flex-shrink-0 flex items-center gap-3">
-                            <!-- <div class="h-10 w-10 bg-saffron-500 rounded-full flex items-center justify-center text-white shadow-lg shadow-saffron-500/20">
+      <div class="relative z-10 flex flex-col h-full">
+        <nav
+          x-data="{ open: false }"
+          class="w-full transition-all duration-300 border-white/10"
+        >
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+              <div class="flex-shrink-0 flex items-center gap-3">
+                <!-- <div class="h-10 w-10 bg-saffron-500 rounded-full flex items-center justify-center text-white shadow-lg shadow-saffron-500/20">
                                 <i class="fas fa-om text-xl"></i>
                             </div> -->
-                            <div>
-                                <h1 class="font-serif font-bold text-xl text-white tracking-wide">Kirtan Seva Trust</h1>
-                                <p class="text-xs text-white font-bold uppercase">Birnagar Temple Project</p>
-                            </div>
-                        </div>
+                <div>
+                  <h1
+                    class="font-serif font-bold text-xl text-white tracking-wide"
+                  >
+                    Kirtan Seva Trust
+                  </h1>
+                  <p class="text-xs text-white font-bold uppercase">
+                    Birnagar Temple Project
+                  </p>
+                </div>
+              </div>
 
-<!-- Menu Items for desktop View -->
-                        <!-- <div class="hidden md:flex space-x-8 items-center">
-                            <a href="index.html" class="text-stone-200 font-bold border-b-2 border-saffron-400 pb-1">Home</a>
-                            <a href="pages/about.html" class="text-stone-200 hover:text-saffron-800 transition font-medium">About</a>
-                            <a href="pages/gallery.html" class="text-stone-200 hover:text-saffron-400 transition font-medium">Gallery</a>
-                            <a href="pages/songs.html" class="text-stone-200 hover:text-saffron-400 transition font-medium">Songs</a>
-                            <a href="#donate" class="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-full font-bold transition shadow-lg transform hover:scale-105">Donate Now</a>
-                        </div> -->
-                        <div class="hidden md:flex space-x-8 items-center">
-                            <a href="index.html" class="font-bold pb-1 text-orange-400 text-sm">HOME</a>
-                            <a href="pages/about.html" class="text-stone-200 text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline">ABOUT</a>
-                            <a href="pages/about.html" class="text-stone-200 text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline">VISION</a>
-                            <a href="pages/gallery.html" class="text-stone-200 text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline">GALLERY</a>
-                            <a href="pages/songs.html" class="text-stone-200 text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline">SONGS</a>
-                            <a href="#donate" class="bg-cyan-600 hover:bg-red-600 text-sm text-white px-6 py-2 rounded font-bold transition shadow-lg transform hover:scale-105">Donate Now</a>
-                        </div>
+              <!-- Menu Items for desktop View -->
 
-<!-- Mobile navigation view -->
-                        <div class="md:hidden flex items-center">
-                            <button @click="open = !open" class="text-white hover:text-saffron-100 focus:outline-none">
-                                <i class="fas fa-bars text-2xl"></i>
-                            </button>
-                        </div>
-                    </div>
+              <div class="hidden md:flex space-x-8 items-center">
+                <a
+                  href="index.html"
+                  class="font-bold pb-1 text-orange-400 text-sm"
+                  >HOME</a
+                >
+
+                <div class="relative group">
+                  <button
+                    class="text-stone-200 text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline flex items-center gap-1 uppercase"
+                  >
+                    ABOUT
+                    <i
+                      class="fas fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute left-0 mt-0 w-64 bg-stone-900/95 backdrop-blur-xl border border-stone-800 rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3"
+                  >
+                    <a
+                      href="pages/who.html"
+                      class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                      >Who is Bhaktivinod Thakur</a
+                    >
+                    <a
+                      href="pages/why.html"
+                      class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                      >Why build a Temple</a
+                    >
+                    <a
+                      href="pages/chairman.html"
+                      class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                      >Chairman's Message</a
+                    >
+                    <a
+                      href="pages/team.html"
+                      class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                      >Meet the Team</a
+                    >
+                  </div>
                 </div>
 
-                <div x-show="open" @click.away="open = false" class="md:hidden bg-white/95 backdrop-blur-md border-t p-4 flex flex-col space-y-3 absolute w-full z-50 text-stone-800 shadow-xl rounded-b-xl">
-                    <a href="index.html" class="block font-bold text-saffron-600">Home</a>
-                    <a href="pages/about.html" class="block hover:text-saffron-600">About</a>
-                    <a href="pages/gallery.html" class="block hover:text-saffron-600">Gallery</a>
-                    <a href="pages/songs.html" class="block hover:text-saffron-600">Songs</a>
+                <div class="relative group">
+                  <button
+                    class="text-stone-200 text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline flex items-center gap-1 uppercase"
+                  >
+                    VISION
+                    <i
+                      class="fas fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform"
+                    ></i>
+                  </button>
+                  <div
+                    class="absolute left-0 mt-0 w-64 bg-stone-900/95 backdrop-blur-xl border border-stone-800 rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3"
+                  >
+                    <a
+                      href="#"
+                      class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                      >Srila Prabhupada's Vision</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                      >JPS Vision</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                      >Founders Vision</a
+                    >
+                  </div>
                 </div>
-            </nav>
-<!-- End of Mobile Nav View -->
 
-<!-- Middle section of home page -->
-        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto my-auto flex-grow flex flex-col justify-center items-center gap-6">
-            <div class="mb-4 w-fit px-4 py-1 border border-white/50 rounded-full bg-white/10 backdrop-blur-sm text-white text-sm uppercase tracking-wide animate-pulse">
-                Birthplace of Srila Bhaktivinoda Thakur
+                <a
+                  href="pages/gallery.html"
+                  class="text-stone-200 text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline uppercase"
+                  >GALLERY</a
+                >
+                <a
+                  href="pages/songs.html"
+                  class="text-stone-200 text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline uppercase"
+                  >SONGS</a
+                >
+                <a
+                  href="pages/donate.html"
+                  class="bg-cyan-600 hover:bg-red-600 text-sm text-white px-6 py-2 rounded font-bold transition shadow-lg transform hover:scale-105 uppercase"
+                  >Donate Now</a
+                >
+              </div>
+
+              <!-- Mobile navigation view -->
+              <div class="md:hidden flex items-center">
+                <button
+                  @click="open = !open"
+                  class="text-white hover:text-saffron-100 focus:outline-none"
+                >
+                  <i class="fas fa-bars text-2xl"></i>
+                </button>
+              </div>
             </div>
-            <h1 class="text-5xl md:text-7xl text-white font-bold mb-6 text-shadow leading-tight">
-                Restoring Spiritual <br> Heritage
-            </h1>
-            <!-- <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-semibold">
+          </div>
+
+          <div
+            x-show="open"
+            @click.away="open = false"
+            class="md:hidden bg-white/95 backdrop-blur-md border-t p-4 flex flex-col space-y-3 absolute w-full z-50 text-stone-800 shadow-xl rounded-b-xl"
+          >
+            <a href="index.html" class="block font-bold text-saffron-600"
+              >Home</a
+            >
+            <a href="pages/about.html" class="block hover:text-saffron-600"
+              >About</a
+            >
+            <a href="pages/gallery.html" class="block hover:text-saffron-600"
+              >Gallery</a
+            >
+            <a href="pages/songs.html" class="block hover:text-saffron-600"
+              >Songs</a
+            >
+          </div>
+        </nav>
+        <!-- End of Mobile Nav View -->
+
+        <!-- Middle section of home page -->
+        <div
+          class="relative z-10 text-center px-4 max-w-4xl mx-auto my-auto flex-grow flex flex-col justify-center items-center gap-6"
+        >
+          <div
+            class="mb-4 w-fit px-4 py-1 border border-white/50 rounded-full bg-white/10 backdrop-blur-sm text-white text-sm uppercase tracking-wide animate-pulse"
+          >
+            Birthplace of Srila Bhaktivinoda Thakur
+          </div>
+          <h1
+            class="text-5xl md:text-7xl text-white font-bold mb-6 text-shadow leading-tight"
+          >
+            Restoring Spiritual <br />
+            Heritage
+          </h1>
+          <!-- <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-semibold">
                 Join us in honoring the legacy of the Seventh Goswami. Your support builds more than walls, it builds devotion.
             </p> -->
-            <div class="relative inline-block mb-10 group">
-                <div class="absolute inset-0 -skew-x-12 rounded-sm bg-white/10 backdrop-blur-md transform transition-all duration-500 "></div>
-    
-                <p class="relative z-10 text-lg md:text-xl text-white px-8 py-4 max-w-2xl mx-auto font-semibold">
-                    Join us in honoring the legacy of the Seventh Goswami. Your support builds more than walls, it builds devotion.
-                </p>
-            </div>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#donate" class="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded font-bold transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
-                    Help Build the Temple
-                </a>
-                <a href="#about" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white text-white px-8 py-4 rounded font-bold transition">
-                    Learn History
-                </a>
-            </div>
-        </div>
-<!-- End of Middle section -->
+          <div class="relative inline-block mb-10 group">
+            <div
+              class="absolute inset-0 -skew-x-12 rounded-sm bg-white/10 backdrop-blur-md transform transition-all duration-500"
+            ></div>
 
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white">
-            <i class="fas fa-chevron-down text-2xl"></i>
+            <p
+              class="relative z-10 text-lg md:text-xl text-white px-8 py-4 max-w-2xl mx-auto font-semibold"
+            >
+              Join us in honoring the legacy of the Seventh Goswami. Your
+              support builds more than walls, it builds devotion.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#donate"
+              class="bg-orange-400 hover:bg-orange-500 text-white px-8 py-4 rounded font-bold transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+            >
+              Help Build the Temple
+            </a>
+            <a
+              href="#about"
+              class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white text-white px-8 py-4 rounded font-bold transition"
+            >
+              Learn History
+            </a>
+          </div>
         </div>
-    
+        <!-- End of Middle section -->
 
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <i class="fas fa-chevron-down text-2xl text-white/70"></i>
-            </div>
+        <div
+          class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white"
+        >
+          <i class="fas fa-chevron-down text-2xl"></i>
         </div>
+
+        <div
+          class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
+        >
+          <i class="fas fa-chevron-down text-2xl text-white/70"></i>
+        </div>
+      </div>
     </div>
 
-<!-- //About/History/Mission section!!!! -->
- <!-- <div class="bg-gradient-to-b from-blue-950 to-blue-800"> -->
-<div class="relative">
-    <section id="about" class="py-20 px-4 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-hidden z-10" style="background-image: url('assets/images/about_2.png');">
+    <!-- //About/History/Mission section!!!! -->
+    <!-- <div class="bg-gradient-to-b from-blue-950 to-blue-800"> -->
+    <div class="relative">
+      <section
+        id="about"
+        class="py-20 px-4 md:px-8 bg-cover bg-center bg-no-repeat relative overflow-hidden z-10"
+        style="background-image: url('assets/images/about_2.png')"
+      >
         <div class="absolute inset-0 bg-black/50"></div>
-        <div class="grid md:grid-cols-2 gap-12 items-center relative z-10 max-w-7xl mx-auto">
-            <div></div>
-            <div>
-                <h2 class="text-3xl font-bold uppercase text-stone-100 mb-6">Srila Bhaktivinoda Thakur Janmasthan Development Project</h2>
-                <p class="text-stone-200 mb-6 text-lg leading-relaxed">
-                    This project, a humble yet monumental offering to our ācāryas, is being undertaken in Bir Nagar, the sacred birthplace of <strong>Śrīla Bhaktivinoda Ṭhākura.</strong> This project, envisioned by our Founder-Ācārya <strong>His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda,</strong> is dedicated to glorifying the life, teachings, and legacy of Śrīla Bhaktivinoda Ṭhākura, the pioneer of the modern bhakti movement.
-                </p>
-                <p class="text-stone-200 mb-8 text-lg leading-relaxed">
-                     This temple and cultural center will serve as a beacon of Kṛṣṇa consciousness, carrying forward the vision of Śrīla Bhaktivinoda Ṭhākura to enlighten the world with pure devotion. Generations to come will be able to visit Bir Nagar, witness his glories, and experience the transformative power of his mission.
-                </p>
+        <div
+          class="grid md:grid-cols-2 gap-12 items-center relative z-10 max-w-7xl mx-auto"
+        >
+          <div></div>
+          <div>
+            <h2 class="text-3xl font-bold uppercase text-stone-100 mb-6">
+              Srila Bhaktivinoda Thakur Janmasthan Development Project
+            </h2>
+            <p class="text-stone-200 mb-6 text-lg leading-relaxed">
+              This project, a humble yet monumental offering to our ācāryas, is
+              being undertaken in Bir Nagar, the sacred birthplace of
+              <strong>Śrīla Bhaktivinoda Ṭhākura.</strong> This project,
+              envisioned by our Founder-Ācārya
+              <strong
+                >His Divine Grace A.C. Bhaktivedanta Swami Prabhupāda,</strong
+              >
+              is dedicated to glorifying the life, teachings, and legacy of
+              Śrīla Bhaktivinoda Ṭhākura, the pioneer of the modern bhakti
+              movement.
+            </p>
+            <p class="text-stone-200 mb-8 text-lg leading-relaxed">
+              This temple and cultural center will serve as a beacon of Kṛṣṇa
+              consciousness, carrying forward the vision of Śrīla Bhaktivinoda
+              Ṭhākura to enlighten the world with pure devotion. Generations to
+              come will be able to visit Bir Nagar, witness his glories, and
+              experience the transformative power of his mission.
+            </p>
 
-                <div class="mt-6">
-                    <a href="pages/about.html" class="bg-saffron-500 hover:bg-saffron-600 px-6 py-2 rounded text-white font-bold transition" aria-label="Learn more about the project">
-                        Learn More
-                    </a>
-                </div>
+            <div class="mt-6">
+              <a
+                href="pages/about.html"
+                class="bg-saffron-500 hover:bg-saffron-600 px-6 py-2 rounded text-white font-bold transition"
+                aria-label="Learn more about the project"
+              >
+                Learn More
+              </a>
             </div>
+          </div>
         </div>
-    </section>
-</div>
+      </section>
+    </div>
 
-
-<!-- Countdown Section!!! -->
-<section id="countdown-section" class="py-16 md:py-20 bg-neutral-50 text-center" style="background: url('assets/images/cd_bg.png') no-repeat center center / cover;">    
-    <div class="container mx-auto px-4 max-w-4xl">
+    <!-- Countdown Section!!! -->
+    <section
+      id="countdown-section"
+      class="py-16 md:py-20 bg-neutral-50 text-center"
+      style="
+        background: url('assets/images/cd_bg.png') no-repeat center center /
+          cover;
+      "
+    >
+      <div class="container mx-auto px-4 max-w-4xl">
         <span class="text-4xl md:text-4xl font-bold text-cyan-700 mb-4">
-            Our First Milestone:
+          Our First Milestone:
         </span>
         <span class="text-4xl md:text-4xl font-bold text-amber-900 mb-4">
-            The Preaching Hall
+          The Preaching Hall
         </span>
         <p class="text-xl md:text-lg text-stone-400 mb-10 font-semibold italic">
-            Join us in fulfilling our 2026 milestone. Every contribution echoes in the foundation.
+          Join us in fulfilling our 2026 milestone. Every contribution echoes in
+          the foundation.
         </p>
 
-        <div class="flex justify-center items-start space-x-6 md:space-x-10 mb-16">
-            
-            <div class="flex flex-col items-center leading-none">
-                <span id="days" class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900">000</span>
-                <span class="text-sm md:text-base font-light text-stone-400 mt-2 italic">Days</span>
-            </div>
-            
-            <span class="text-5xl md:text-7xl font-light text-saffron-500 mt-2">:</span>
-            
-            <div class="flex flex-col items-center leading-none">
-                <span id="hours" class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900">00</span>
-                <span class="text-sm md:text-base font-light text-stone-400 mt-2 italic">Hours</span>
-            </div>
-            
-            <span class="text-5xl md:text-7xl font-light text-saffron-500 mt-2">:</span>
-            
-            <div class="flex flex-col items-center leading-none">
-                <span id="minutes" class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900">00</span>
-                <span class="text-sm md:text-base font-light text-stone-400 mt-2 italic">Minutes</span>
-            </div>
-            
-            <span class="text-5xl md:text-7xl font-light text-saffron-500 mt-2">:</span>
-            
-            <div class="flex flex-col items-center leading-none">
-                <span id="seconds" class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-saffron-500">00</span>
-                <span class="text-sm md:text-base font-light text-stone-400 mt-2 italic">Seconds</span>
-            </div>
+        <div
+          class="flex justify-center items-start space-x-6 md:space-x-10 mb-16"
+        >
+          <div class="flex flex-col items-center leading-none">
+            <span
+              id="days"
+              class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900"
+              >000</span
+            >
+            <span
+              class="text-sm md:text-base font-light text-stone-400 mt-2 italic"
+              >Days</span
+            >
+          </div>
+
+          <span class="text-5xl md:text-7xl font-light text-saffron-500 mt-2"
+            >:</span
+          >
+
+          <div class="flex flex-col items-center leading-none">
+            <span
+              id="hours"
+              class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900"
+              >00</span
+            >
+            <span
+              class="text-sm md:text-base font-light text-stone-400 mt-2 italic"
+              >Hours</span
+            >
+          </div>
+
+          <span class="text-5xl md:text-7xl font-light text-saffron-500 mt-2"
+            >:</span
+          >
+
+          <div class="flex flex-col items-center leading-none">
+            <span
+              id="minutes"
+              class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900"
+              >00</span
+            >
+            <span
+              class="text-sm md:text-base font-light text-stone-400 mt-2 italic"
+              >Minutes</span
+            >
+          </div>
+
+          <span class="text-5xl md:text-7xl font-light text-saffron-500 mt-2"
+            >:</span
+          >
+
+          <div class="flex flex-col items-center leading-none">
+            <span
+              id="seconds"
+              class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-saffron-500"
+              >00</span
+            >
+            <span
+              class="text-sm md:text-base font-light text-stone-400 mt-2 italic"
+              >Seconds</span
+            >
+          </div>
         </div>
 
         <div class="max-w-4xl mx-auto">
-            <p class="text-lg text-justify md:text-xl text-cyan-700 leading-relaxed font-[cinzel] font-bold">
-                <!-- <span class="text-slate-400 text-xl font-[tahoma] font-extrabold mr-2 align-middle">"</span> -->
-                "Srila Bhaktivinoda Thakura is the pioneer of the Krsna consciousness movement. He is the original spiritual master in the sense that he first introduced the movement in the western countries. So we are simply following his footsteps."
-            </p>
-            <footer class="mt-6 text-base md:text-lg font-semibold text-gray-500 text-right italic font-[sans]">His Divine Grace A.C. Bhaktivedanta Swami Prabhupada</footer>
+          <p
+            class="text-lg text-justify md:text-xl text-cyan-700 leading-relaxed font-[cinzel] font-bold"
+          >
+            <!-- <span class="text-slate-400 text-xl font-[tahoma] font-extrabold mr-2 align-middle">"</span> -->
+            "Srila Bhaktivinoda Thakura is the pioneer of the Krsna
+            consciousness movement. He is the original spiritual master in the
+            sense that he first introduced the movement in the western
+            countries. So we are simply following his footsteps."
+          </p>
+          <footer
+            class="mt-6 text-base md:text-lg font-semibold text-gray-500 text-right italic font-[sans]"
+          >
+            His Divine Grace A.C. Bhaktivedanta Swami Prabhupada
+          </footer>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <!--New high visibility PP-->
+    <section
+      id="progress"
+      class="relative py-32 bg-stone-950 overflow-hidden text-stone-200"
+    >
+      <div class="absolute inset-0 pointer-events-none z-0">
+        <div
+          class="planet planet-saffron w-96 h-96 -bottom-20 -right-20 opacity-40"
+          style="animation: float 25s ease-in-out infinite"
+        ></div>
+        <div
+          class="planet planet-stone w-64 h-64 top-20 -left-10 opacity-30"
+          style="animation: float 18s ease-in-out infinite reverse"
+        ></div>
+        <div
+          class="absolute inset-0 opacity-20"
+          style="
+            background-image: radial-gradient(white 1px, transparent 1px);
+            background-size: 40px 40px;
+          "
+        ></div>
+      </div>
 
-<!-- PROJECT PROGRESS!! -->
-<section id="progress" class="relative py-32 bg-stone-950 overflow-hidden text-stone-200">
-
-    <div class="absolute inset-0 pointer-events-none z-0">
-        <div class="planet planet-saffron w-96 h-96 -bottom-20 -right-20 opacity-40" style="animation: float 25s ease-in-out infinite;"></div>
-        <div class="planet planet-stone w-64 h-64 top-20 -left-10 opacity-30" style="animation: float 18s ease-in-out infinite reverse;"></div>
-        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(white 1px, transparent 1px); background-size: 40px 40px;"></div>
-    </div>
-
-    <div class="relative z-10 max-w-6xl mx-auto px-6">
-        
+      <div class="relative z-10 max-w-6xl mx-auto px-6">
         <div class="text-center mb-24 reveal">
-            <h2 class="text-4xl md:text-6xl font-serif text-saffron-400 mb-6 drop-shadow-lg">The Sacred Timeline</h2>
-            <p class="text-stone-400 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
-                A journey of devotion, rising from the earth to the sky. Witness the phases of construction.
-            </p>
+          <h2
+            class="text-4xl md:text-6xl font-serif text-saffron-400 mb-6 drop-shadow-lg"
+          >
+            The Sacred Timeline
+          </h2>
+          <p
+            class="text-stone-300 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed"
+          >
+            A journey of devotion, rising from the earth to the sky. Witness the
+            manifestation of our vision.
+          </p>
         </div>
 
         <div class="relative">
-            
-            <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-stone-800 transform md:-translate-x-1/2">
-                <div class="timeline-beam w-full h-[55%] rounded-full"></div>
+          <div
+            class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-stone-800 transform md:-translate-x-1/2"
+          >
+            <div
+              class="timeline-beam w-full h-[15%] rounded-full shadow-[0_0_15px_#f59e0b]"
+            ></div>
+          </div>
+
+          <div class="space-y-22">
+            <div class="relative flex flex-col md:flex-row items-center reveal">
+              <div
+                class="md:w-1/2 md:pr-16 md:text-right order-2 md:order-1 pl-12 md:pl-0 w-full"
+              >
+                <div
+                  class="bg-stone-900/80 backdrop-blur-md border border-saffron-500/50 p-8 rounded-2xl shadow-2xl relative overflow-hidden md:text-right"
+                >
+                  <div
+                    class="absolute -top-10 -right-10 w-32 h-32 bg-saffron-500/10 blur-3xl rounded-full"
+                  ></div>
+
+                  <span
+                    class="inline-block py-1 px-3 rounded bg-saffron-500/20 text-saffron-400 text-[10px] font-bold tracking-widest mb-4"
+                    >CURRENT ACTIVE PHASE</span
+                  >
+                  <h3 class="text-2xl font-bold text-white mb-2">
+                    Phase 1: Sharanagati
+                  </h3>
+
+                  <div class="grid grid-cols-1 gap-4">
+                    <div
+                      class="bg-stone-950/50 border border-stone-800 p-4 rounded-xl text-left"
+                    >
+                      <div class="flex justify-between mb-2">
+                        <span class="text-sm font-bold text-stone-300"
+                          >Preaching Hall</span
+                        >
+                        <span class="text-xs text-saffron-500">20%</span>
+                      </div>
+                      <div
+                        class="w-full bg-stone-800 h-1 rounded-full overflow-hidden"
+                      >
+                        <div
+                          class="bg-saffron-500 h-full w-[20%] shadow-[0_0_8px_#f59e0b]"
+                        ></div>
+                      </div>
+                    </div>
+                    <div
+                      class="bg-stone-950/30 border border-stone-800/50 p-3 rounded-xl text-left opacity-60"
+                    >
+                      <div class="flex justify-between items-center">
+                        <span class="text-sm font-medium text-stone-400"
+                          >Naturopathy Centre</span
+                        >
+                        <span class="text-xs text-stone-600 uppercase"
+                          >Upcoming</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="bg-stone-950/30 border border-stone-800/50 p-3 rounded-xl text-left opacity-60"
+                    >
+                      <div class="flex justify-between items-center">
+                        <span class="text-sm font-medium text-stone-400"
+                          >Guesthouse</span
+                        >
+                        <span class="text-xs text-stone-600 uppercase"
+                          >Upcoming</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-stone-900 border-2 border-saffron-500 shadow-[0_0_25px_#f59e0b] z-10 flex items-center justify-center order-1 md:order-2"
+              >
+                <div
+                  class="w-4 h-4 bg-saffron-500 rounded-full animate-pulse"
+                ></div>
+              </div>
+              <div class="md:w-1/2 order-3"></div>
             </div>
 
-            <div class="space-y-24"> <div class="relative flex flex-col md:flex-row items-center reveal">
-                    <div class="md:w-1/2 md:pr-16 md:text-right order-2 md:order-1 pl-12 md:pl-0">
-                        <h3 class="text-3xl font-bold text-stone-500 mb-2">2024: The Foundation</h3>
-                        <p class="text-stone-500 text-sm font-mono mb-4">TARGET: Rs 5 CR • STATUS: COMPLETED</p>
-                        <p class="text-stone-600 leading-relaxed">
-                            The earth was blessed, and the deep piling work was completed. The roots of the temple are now set firm in the holy dhama.
-                        </p>
+            <div class="relative flex flex-col md:flex-row items-center reveal">
+              <div class="md:w-1/2 order-3 md:order-1"></div>
+              <div
+                class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-stone-900 border-2 border-stone-400 shadow-[0_0_10px_rgba(255,255,255,0.1)] z-10 order-1 md:order-2"
+              ></div>
+              <div
+                class="md:w-1/2 md:pl-16 order-2 md:order-3 pl-12 md:pl-0 w-full"
+              >
+                <div class="p-8 rounded-xl shadow-xl">
+                  <!-- <p class="text-stone-600 text-sm font-mono mb-4">STATUS: UPCOMING</p> -->
+                  <h3 class="text-2xl font-bold text-white mb-2">
+                    Phase 2: Bhakti-poshana
+                  </h3>
+                  <p
+                    class="text-stone-600 text-xs font-mono mb-6 uppercase tracking-widest"
+                  >
+                    STATUS: UPCOMING
+                  </p>
+                  <!-- <p class="text-stone-300 text-sm mb-6">Manifesting the kitchens and goshalas to nourish our community.</p> -->
+                  <div class="space-y-1">
+                    <!-- <div class="flex items-center gap-3 bg-stone-950/50 p-3 rounded-lg border-dashed border-stone-800">
+                                    <span class="w-2 h-2 rounded-full bg-stone-500"></span>
+                                    <span class="text-sm font-bold text-stone-100">Goshala</span>
+                                </div> -->
+                    <div
+                      class="flex items-center gap-3 text-stone-600 border border-dashed border-stone-700 p-3 rounded-lg"
+                    >
+                      <span
+                        class="w-2 h-2 rounded-full bg-stone-500 border border-stone-700"
+                      ></span>
+                      <span class="text-sm text-stone-100 font-bold"
+                        >Goshala</span
+                      >
                     </div>
-                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-stone-900 border-2 border-green-500 shadow-[0_0_15px_rgba(34,197,94,0.4)] z-10 flex items-center justify-center order-1 md:order-2">
-                        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <div
+                      class="flex items-center gap-3 text-stone-600 border border-dashed border-stone-700 p-3 rounded-lg"
+                    >
+                      <span
+                        class="w-2 h-2 rounded-full bg-stone-500 border border-stone-700"
+                      ></span>
+                      <span class="text-sm text-stone-100 font-bold"
+                        >kitchen</span
+                      >
                     </div>
-                    <div class="md:w-1/2 order-3"></div>
+                    <div
+                      class="flex items-center gap-3 text-stone-600 border border-dashed border-stone-700 p-3 rounded-lg"
+                    >
+                      <span
+                        class="w-2 h-2 rounded-full bg-stone-500 border border-stone-700"
+                      ></span>
+                      <span class="text-sm text-stone-100 font-bold"
+                        >Prasadm Hall</span
+                      >
+                    </div>
+                  </div>
                 </div>
-
-                <div class="relative flex flex-col md:flex-row items-center reveal">
-                    <div class="md:w-1/2 order-3 md:order-1"></div>
-                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-stone-900 border-2 border-saffron-500 shadow-[0_0_25px_#f59e0b] z-10 flex items-center justify-center order-1 md:order-2">
-                        <div class="w-4 h-4 bg-saffron-500 rounded-full animate-pulse"></div>
-                    </div>
-                    <div class="md:w-1/2 md:pl-16 order-2 md:order-3 pl-12 md:pl-0 w-full">
-                        <div class="bg-stone-900/80 backdrop-blur-md border border-saffron-500/50 p-8 rounded-2xl shadow-2xl relative overflow-hidden group hover:border-saffron-400 transition-colors duration-500">
-                            <div class="absolute -top-10 -right-10 w-32 h-32 bg-saffron-500/20 blur-3xl rounded-full group-hover:bg-saffron-500/30 transition-all"></div>
-                            
-                            <span class="inline-block py-1 px-3 rounded bg-saffron-500/20 text-saffron-400 text-xs font-bold tracking-widest mb-4 border border-saffron-500/20">CURRENT PHASE</span>
-                            <h3 class="text-3xl font-bold text-white mb-2">2025: Rising Structures</h3>
-                            <div class="w-full bg-stone-800 h-2 rounded-full mb-4 overflow-hidden">
-                                <div class="bg-gradient-to-r from-saffron-600 to-yellow-400 h-full w-[65%] shadow-[0_0_10px_#f59e0b]"></div>
-                            </div>
-                            <p class="text-stone-300 leading-relaxed">
-                                The visible form of the Lord's palace begins to rise. Pillars, beams, and the first floor slab are currently under construction.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative flex flex-col md:flex-row items-center reveal">
-                    <div class="md:w-1/2 md:pr-16 md:text-right order-2 md:order-1 pl-12 md:pl-0">
-                        <h3 class="text-3xl font-bold text-stone-400 mb-2">2026: The Domes</h3>
-                        <p class="text-stone-600 text-sm font-mono mb-4">TARGET: Rs 8 CR • STATUS: UPCOMING</p>
-                        <p class="text-stone-500 leading-relaxed">
-                            The grand domes will be cast, crowning the temple. Intricate stone carving work begins on the exterior facade.
-                        </p>
-                    </div>
-                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-stone-900 border border-stone-600 z-10 order-1 md:order-2"></div>
-                    <div class="md:w-1/2 order-3"></div>
-                </div>
-                
-                <div class="relative flex flex-col md:flex-row items-center reveal">
-                    <div class="md:w-1/2 order-3 md:order-1"></div>
-                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-stone-900 border border-stone-600 z-10 order-1 md:order-2"></div>
-                    <div class="md:w-1/2 md:pl-16 order-2 md:order-3 pl-12 md:pl-0">
-                        <h3 class="text-3xl font-bold text-stone-400 mb-2">2027: Deity Installation Prep</h3>
-                        <p class="text-stone-600 text-sm font-mono mb-4">TARGET: Rs 6 CR • STATUS: UPCOMING</p>
-                        <p class="text-stone-500 leading-relaxed">
-                            Interior finishing, marble laying, and the preparation of the golden altar for the Lordships.
-                        </p>
-                    </div>
-                </div>
-
+              </div>
             </div>
+
+            <div class="relative flex flex-col md:flex-row items-center reveal">
+              <div
+                class="md:w-1/2 md:pr-16 md:text-right order-2 md:order-1 pl-12 md:pl-0 w-full"
+              >
+                <div class="p-8 rounded-xl shadow-xl">
+                  <h3 class="text-2xl font-bold text-white mb-2">
+                    Phase 3: Rising Structures
+                  </h3>
+                  <p
+                    class="text-stone-600 text-xs font-mono mb-6 uppercase tracking-widest"
+                  >
+                    STATUS: UPCOMING
+                  </p>
+                  <!-- <p class="text-stone-300 text-sm mb-6 leading-relaxed md:text-right">
+                                    A monumental sanctuary featuring hand-carved stone facades and majestic domes, designed to house the Lordships for generations to come.
+                                </p> -->
+                  <!-- <div class="flex items-center md:justify-end gap-3 mt-4">
+                                <span class="text-sm font-bold text-stone-100">Grand Temple Construction</span>
+                                <span class="w-2 h-2 rounded-full bg-stone-500"></span>
+                            </div> -->
+                  <div
+                    class="flex flex-row-reverse items-center justify-start gap-3 bg-stone-950/50 p-3 rounded-lg border border-dashed border-stone-700"
+                  >
+                    <span
+                      class="w-2 h-2 rounded-full bg-stone-500 flex-shrink-0"
+                    ></span>
+                    <span class="text-sm font-bold text-stone-100 text-right"
+                      >Grand Temple Construction</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-stone-900 border-2 border-stone-400 z-10 order-1 md:order-2"
+              ></div>
+              <div class="md:w-1/2 order-3"></div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row items-center reveal">
+              <div class="md:w-1/2 order-3 md:order-1"></div>
+              <div
+                class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-stone-900 border-2 border-stone-400 z-10 order-1 md:order-2"
+              ></div>
+              <div
+                class="md:w-1/2 md:pl-16 order-2 md:order-3 pl-12 md:pl-0 w-full"
+              >
+                <div class="p-8 rounded-xl shadow-xl">
+                  <h3 class="text-2xl font-bold text-white mb-2">
+                    Phase 4: The Legacy Phase
+                  </h3>
+                  <p
+                    class="text-stone-600 text-xs font-mono mb-6 uppercase tracking-widest"
+                  >
+                    STATUS: UPCOMING
+                  </p>
+                  <div class="space-y-3 mt-4">
+                    <div
+                      class="flex items-center gap-3 bg-stone-950/50 p-3 rounded-lg border border-dashed border-stone-700"
+                    >
+                      <span class="w-2 h-2 rounded-full bg-stone-500"></span>
+                      <span class="text-sm font-bold text-stone-100"
+                        >Teaching Facility</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center gap-3 bg-stone-950/50 p-3 rounded-lg border border-dashed border-stone-700"
+                    >
+                      <span class="w-2 h-2 rounded-full bg-stone-500"></span>
+                      <span class="text-sm font-bold text-stone-100"
+                        >Govinda's Restaurant</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--New ticker-->
+    <div
+      class="bg-stone-900/60 backdrop-blur-xl border-t border-b border-saffron-500/20 py-8 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-saffron-500/5 via-transparent to-saffron-500/5 pointer-events-none"
+      ></div>
+
+      <div
+        class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10"
+      >
+        <div class="w-full md:w-1/2">
+          <div class="flex justify-between items-end mb-3">
+            <div>
+              <h4
+                class="text-saffron-400 font-bold uppercase tracking-widest text-xs mb-1"
+              >
+                Current Goal: Preaching Hall
+              </h4>
+              <p class="text-2xl font-serif text-white">
+                ₹25,40,000
+                <span class="text-stone-500 text-sm font-sans tracking-normal"
+                  >raised of ₹1.2 Cr</span
+                >
+              </p>
+            </div>
+            <div class="text-right">
+              <span class="text-3xl font-mono text-saffron-500 font-bold"
+                >21%</span
+              >
+            </div>
+          </div>
+          <div
+            class="w-full h-4 bg-stone-950 rounded-full p-1 border border-stone-800"
+          >
+            <div
+              class="h-full bg-gradient-to-r from-saffron-600 via-saffron-400 to-yellow-300 rounded-full shadow-[0_0_15px_rgba(245,158,11,0.4)] animate-pulse"
+              style="width: 21%"
+            ></div>
+          </div>
         </div>
 
-    </div>
-</section>
+        <div
+          class="w-full md:w-1/3 bg-stone-950/50 p-4 rounded-xl border border-stone-800/50"
+        >
+          <div class="flex items-center gap-3 mb-3">
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-2 w-2 bg-green-500"
+              ></span>
+            </span>
+            <span
+              class="text-[10px] font-bold text-stone-500 uppercase tracking-tighter"
+              >Recent Contributions</span
+            >
+          </div>
 
-<!-- //Upcoming Events section!!!! -->
+          <div class="h-6 overflow-hidden relative">
+            <div class="flex flex-col animate-ticker-infinite">
+              <p class="h-6 text-sm text-stone-300 font-light italic leading-6">
+                <span class="text-saffron-400 font-semibold not-italic"
+                  >Saathvika</span
+                >
+                donated <span class="text-white font-mono">₹10,000</span>
+              </p>
+              <p class="h-6 text-sm text-stone-300 font-light italic leading-6">
+                <span class="text-saffron-400 font-semibold not-italic"
+                  >Gokul</span
+                >
+                donated <span class="text-white font-mono">₹20,000</span>
+              </p>
+              <p class="h-6 text-sm text-stone-300 font-light italic leading-6">
+                <span class="text-saffron-400 font-semibold not-italic"
+                  >Amrutha</span
+                >
+                donated <span class="text-white font-mono">₹50,000</span>
+              </p>
+
+              <p class="h-6 text-sm text-stone-300 font-light italic leading-6">
+                <span class="text-saffron-400 font-semibold not-italic"
+                  >Saathvika</span
+                >
+                donated <span class="text-white font-mono">₹10,000</span>
+              </p>
+              <p class="h-6 text-sm text-stone-300 font-light italic leading-6">
+                <span class="text-saffron-400 font-semibold not-italic"
+                  >Gokul</span
+                >
+                donated <span class="text-white font-mono">₹20,000</span>
+              </p>
+              <p class="h-6 text-sm text-stone-300 font-light italic leading-6">
+                <span class="text-saffron-400 font-semibold not-italic"
+                  >Amrutha</span
+                >
+                donated <span class="text-white font-mono">₹50,000</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-none">
+          <a
+            href="#donate"
+            class="bg-saffron-500 hover:bg-saffron-400 text-stone-950 px-8 py-4 rounded-lg font-bold transition-all transform hover:-translate-y-1 shadow-lg shadow-saffron-500/20 block text-center"
+          >
+            FUEL THIS VISION
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* Total items in the list = 6 (3 original + 3 clones)
+       We only need to scroll through the first 3 (50% of the total height)
+       then reset instantly to 0. 
+    */
+      @keyframes ticker-infinite {
+        0%,
+        25% {
+          transform: translateY(0);
+        } /* Item 1 */
+        33%,
+        58% {
+          transform: translateY(-16.66%);
+        } /* Item 2 (1/6th) */
+        66%,
+        91% {
+          transform: translateY(-33.33%);
+        } /* Item 3 (2/6ths) */
+        100% {
+          transform: translateY(-50%);
+        } /* Resets to 0 immediately after this */
+      }
+      .animate-ticker-infinite {
+        animation: ticker-infinite 12s infinite cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    </style>
+
+    <!-- //Upcoming Events section!!!! -->
     <!-- <section id="events" class="py-20 px-4">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-4xl font-serif font-bold text-center text-stone-800 mb-12">Upcoming Festivals</h2>
@@ -627,8 +1222,7 @@
         </div>
     </section> -->
 
-
-<!-- //Songs section!! -->
+    <!-- //Songs section!! -->
     <!-- <section id="songs" class="py-20 bg-stone-900 text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div class="max-w-4xl mx-auto px-4 relative z-10" x-data="{ openSong: null }">
@@ -694,8 +1288,7 @@
         </div>
     </section> -->
 
-
-<!-- //Gallery Section!!! -->
+    <!-- //Gallery Section!!! -->
     <!-- <section id="gallery" class="py-20 px-4 max-w-7xl mx-auto">
         <h2 class="text-4xl font-serif font-bold text-center text-stone-800 mb-12">Darshan Gallery</h2>
         <div class="columns-1 md:columns-3 gap-4 space-y-4">
@@ -777,70 +1370,143 @@
         </div>
     </section> -->
 
+    <!-- New Gallery Section -->
+    <section
+      id="home-gallery"
+      class="py-24 overflow-hidden relative"
+      style="
+        background: radial-gradient(
+            900px 400px at top right,
+            rgba(255, 236, 179, 0.25),
+            transparent 25%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(255, 250, 245, 1) 0%,
+            rgba(240, 249, 255, 1) 100%
+          );
+      "
+    >
+      <div
+        class="absolute top-0 left-0 w-full h-full pointer-events-none"
+        style="
+          background: radial-gradient(
+            ellipse at top right,
+            rgba(255, 243, 224, 0.6),
+            rgba(224, 243, 255, 0.25) 40%,
+            transparent 60%
+          );
+        "
+      ></div>
 
-<!-- New Gallery Section -->
-<section id="home-gallery" class="py-24 overflow-hidden relative" style="background: radial-gradient(900px 400px at top right, rgba(255,236,179,0.25), transparent 25%), linear-gradient(180deg, rgba(255,250,245,1) 0%, rgba(240,249,255,1) 100%);">
-
-    <div class="absolute top-0 left-0 w-full h-full pointer-events-none" style="background: radial-gradient(ellipse at top right, rgba(255,243,224,0.6), rgba(224,243,255,0.25) 40%, transparent 60%);"></div>
-
-    <div class="container mx-auto px-4 relative z-10">
-        
+      <div class="container mx-auto px-4 relative z-10">
         <div class="text-center mb-16 reveal">
-            <h2 class="text-4xl md:text-5xl font-serif text-stone-800 mb-4">Glimpses of Devotion</h2>
-            <p class="text-stone-700 max-w-xl mx-auto">Witness the journey, the festivals, and the growing community.</p>
+          <h2 class="text-4xl md:text-5xl font-serif text-stone-800 mb-4">
+            Glimpses of Devotion
+          </h2>
+          <p class="text-stone-700 max-w-xl mx-auto">
+            Witness the journey, the festivals, and the growing community.
+          </p>
         </div>
 
-        <div class="flex md:grid md:grid-cols-12 md:grid-rows-2 md:auto-rows-fr gap-2 md:gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar pb-4 md:pb-0 items-start md:items-start">
+        <div
+          class="flex md:grid md:grid-cols-12 md:grid-rows-2 md:auto-rows-fr gap-2 md:gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar pb-4 md:pb-0 items-start md:items-start"
+        >
+          <a
+            href="pages/gallery.html"
+            class="group relative block flex-none w-[85vw] md:w-auto md:col-span-4 md:row-span-2 overflow-hidden snap-center shadow-md shadow-stone-200/30 reveal md:flex md:flex-col md:justify-end md:self-stretch"
+          >
+            <img
+              src="assets/images/image_1.jpg"
+              alt="Temple Construction"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 h-20 md:h-24 bg-gradient-to-t from-white/70 to-transparent opacity-70 group-hover:opacity-90 transition-opacity"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform"
+            >
+              <h3 class="text-stone-800 font-serif font-bold text-2xl">
+                The Foundation Stone
+              </h3>
+            </div>
+          </a>
 
-            <a href="pages/gallery.html" class="group relative block flex-none w-[85vw] md:w-auto md:col-span-4 md:row-span-2 overflow-hidden snap-center shadow-md shadow-stone-200/30 reveal md:flex md:flex-col md:justify-end md:self-stretch">
-                <img src="assets/images/image_1.jpg" 
-                     alt="Temple Construction" 
-                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1">
-                <div class="absolute bottom-0 left-0 right-0 h-20 md:h-24 bg-gradient-to-t from-white/70 to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
-                <div class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
-                    <h3 class="text-stone-800 font-serif font-bold text-2xl">The Foundation Stone</h3>
-                </div>
-            </a>
+          <a
+            href="pages/gallery.html"
+            class="group relative block flex-none w-[85vw] md:w-auto md:col-span-5 md:row-span-1 overflow-hidden snap-center shadow-md shadow-stone-200/30 reveal md:flex md:flex-col md:justify-end md:self-stretch"
+          >
+            <img
+              src="assets/images/image_2.jpg"
+              alt="Festival"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 h-16 md:h-20 bg-gradient-to-t from-white/70 to-transparent opacity-70 group-hover:opacity-90 transition-opacity"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform"
+            >
+              <h3 class="text-stone-800 font-serif font-bold text-xl">
+                Ratha Yatra 2024
+              </h3>
+            </div>
+          </a>
 
-            <a href="pages/gallery.html" class="group relative block flex-none w-[85vw] md:w-auto md:col-span-5 md:row-span-1 overflow-hidden snap-center shadow-md shadow-stone-200/30 reveal md:flex md:flex-col md:justify-end md:self-stretch">
-                <img src="assets/images/image_2.jpg" 
-                     alt="Festival" 
-                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 right-0 h-16 md:h-20 bg-gradient-to-t from-white/70 to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
-                <div class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
-                    <h3 class="text-stone-800 font-serif font-bold text-xl">Ratha Yatra 2024</h3>
-                </div>
-            </a>
+          <a
+            href="pages/gallery.html"
+            class="group relative block flex-none w-[85vw] md:w-auto md:col-span-3 md:row-span-2 overflow-hidden snap-center shadow-md shadow-stone-200/30 reveal md:flex md:flex-col md:justify-end md:self-stretch"
+          >
+            <img
+              src="assets/images/image_5.jpg"
+              alt="Deity Worship"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:-rotate-1"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 h-20 md:h-24 bg-gradient-to-t from-white/70 to-transparent opacity-70 group-hover:opacity-90 transition-opacity"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform"
+            >
+              <h3 class="text-stone-800 font-serif font-bold text-2xl">
+                Daily Arati Seva
+              </h3>
+            </div>
+          </a>
 
-            <a href="pages/gallery.html" class="group relative block flex-none w-[85vw] md:w-auto md:col-span-3 md:row-span-2 overflow-hidden snap-center shadow-md shadow-stone-200/30 reveal md:flex md:flex-col md:justify-end md:self-stretch">
-                <img src="assets/images/image_5.jpg" 
-                     alt="Deity Worship" 
-                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:-rotate-1">
-                <div class="absolute bottom-0 left-0 right-0 h-20 md:h-24 bg-gradient-to-t from-white/70 to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
-                <div class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
-                    <h3 class="text-stone-800 font-serif font-bold text-2xl">Daily Arati Seva</h3>
-                </div>
-            </a>
-
-             <a href="pages/gallery.html" class="group relative block flex-none w-[85vw] md:w-auto md:col-span-5 md:row-span-1 overflow-hidden snap-center shadow-md shadow-stone-200/30 reveal md:flex md:flex-col md:justify-end md:self-stretch">
-                <img src="assets/images/image_3.jpg" 
-                     alt="Community" 
-                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                <div class="absolute bottom-0 left-0 right-0 h-16 md:h-20 bg-gradient-to-t from-white/70 to-transparent opacity-70 group-hover:opacity-90 transition-opacity"></div>
-                <div class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
-                    <h3 class="text-stone-800 font-serif font-bold text-xl">Community Feast</h3>
-                </div>
-            </a>
-
+          <a
+            href="pages/gallery.html"
+            class="group relative block flex-none w-[85vw] md:w-auto md:col-span-5 md:row-span-1 overflow-hidden snap-center shadow-md shadow-stone-200/30 reveal md:flex md:flex-col md:justify-end md:self-stretch"
+          >
+            <img
+              src="assets/images/image_3.jpg"
+              alt="Community"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 h-16 md:h-20 bg-gradient-to-t from-white/70 to-transparent opacity-70 group-hover:opacity-90 transition-opacity"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform"
+            >
+              <h3 class="text-stone-800 font-serif font-bold text-xl">
+                Community Feast
+              </h3>
+            </div>
+          </a>
         </div>
-        
-        <p class="md:hidden text-stone-600 text-sm text-center mt-4 animate-pulse">Swipe to explore <span class="text-xl">→</span></p>
 
-    </div>
-</section>
+        <p
+          class="md:hidden text-stone-600 text-sm text-center mt-4 animate-pulse"
+        >
+          Swipe to explore <span class="text-xl">→</span>
+        </p>
+      </div>
+    </section>
 
-<!-- Another gallery -->
- <!-- <section id="home-gallery" class="py-24 bg-stone-950 overflow-hidden relative">
+    <!-- Another gallery -->
+    <!-- <section id="home-gallery" class="py-24 bg-stone-950 overflow-hidden relative">
     
     <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,_rgba(245,158,11,0.08),transparent_50%)] pointer-events-none"></div>
 
@@ -900,8 +1566,7 @@
     </div>
 </section> -->
 
-
-<!-- //Testimonials Section!!! -->
+    <!-- //Testimonials Section!!! -->
     <!-- <section class="py-20 bg-saffron-50">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-serif font-bold text-center text-stone-800 mb-12">Pilgrim Experiences</h2>
@@ -949,8 +1614,7 @@
         </div>
     </section> -->
 
-
-<!-- //News and Articles!!! -->
+    <!-- //News and Articles!!! -->
     <!-- <section class="py-20 px-4 max-w-7xl mx-auto">
         <h2 class="text-3xl font-serif font-bold text-stone-800 mb-8 border-b border-stone-200 pb-4">Temple News</h2>
         <div class="grid md:grid-cols-3 gap-8">
@@ -999,119 +1663,221 @@
         </div>
     </section> -->
 
-
-<!-- //Donate Now Section!!! -->
+    <!-- //Donate Now Section!!! -->
     <section id="donate" class="py-24 bg-stone-800 text-white relative">
-        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-saffron-500 via-gold to-saffron-500"></div>
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-serif font-bold text-saffron-400 mb-6">Build a Home for Krishna</h2>
-            <p class="text-xl text-stone-300 max-w-2xl mx-auto mb-12">"One who builds a beautiful temple for Lord Vishnu will be freed from all sinful reactions and he will enter the Vaikuntha planets." — Skanda Purana</p>
-            
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <div class="bg-stone-700 p-8 rounded-xl border border-stone-600 hover:border-saffron-500 transition hover:bg-stone-650 cursor-pointer group">
-                    <h3 class="text-2xl font-bold mb-2">Sponsor a Brick</h3>
-                    <div class="text-3xl text-saffron-400 font-bold mb-4">₹1,001</div>
-                    <p class="text-sm text-stone-400 mb-6">Write your name on a brick used in the foundation.</p>
-                    <button class="w-full bg-white text-stone-900 group-hover:bg-saffron-500 group-hover:text-white py-3 rounded font-bold transition">Donate</button>
-                </div>
-                <div class="bg-stone-700 p-8 rounded-xl border-2 border-saffron-500 relative transform md:-translate-y-4 shadow-2xl">
-                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-saffron-500 text-white px-4 py-1 rounded-full text-xs font-bold tracking-wide">MOST POPULAR</div>
-                    <h3 class="text-2xl font-bold mb-2">Square Foot Seva</h3>
-                    <div class="text-3xl text-saffron-400 font-bold mb-4">₹5,000</div>
-                    <p class="text-sm text-stone-400 mb-6">Sponsor the construction of 1 sq.ft of the temple hall.</p>
-                    <button class="w-full bg-saffron-500 text-white hover:bg-saffron-600 py-3 rounded font-bold transition">Donate</button>
-                </div>
-                <div class="bg-stone-700 p-8 rounded-xl border border-stone-600 hover:border-saffron-500 transition hover:bg-stone-650 cursor-pointer group">
-                    <h3 class="text-2xl font-bold mb-2">Nitya Seva</h3>
-                    <div class="text-3xl text-saffron-400 font-bold mb-4">₹21,000</div>
-                    <p class="text-sm text-stone-400 mb-6">Sponsor one full day of Deity worship and Bhoga.</p>
-                    <button class="w-full bg-white text-stone-900 group-hover:bg-saffron-500 group-hover:text-white py-3 rounded font-bold transition">Donate</button>
-                </div>
+      <div
+        class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-saffron-500 via-gold to-saffron-500"
+      ></div>
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2
+          class="text-4xl md:text-5xl font-serif font-bold text-saffron-400 mb-6"
+        >
+          Build a Home for Krishna
+        </h2>
+        <p class="text-xl text-stone-300 max-w-2xl mx-auto mb-12">
+          "One who builds a beautiful temple for Lord Vishnu will be freed from
+          all sinful reactions and he will enter the Vaikuntha planets." —
+          Skanda Purana
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <div
+            class="bg-stone-700 p-8 rounded-xl border border-stone-600 hover:border-saffron-500 transition hover:bg-stone-650 cursor-pointer group"
+          >
+            <h3 class="text-2xl font-bold mb-2">Sponsor a Brick</h3>
+            <div class="text-3xl text-saffron-400 font-bold mb-4">₹1,001</div>
+            <p class="text-sm text-stone-400 mb-6">
+              Write your name on a brick used in the foundation.
+            </p>
+            <button
+              class="w-full bg-white text-stone-900 group-hover:bg-saffron-500 group-hover:text-white py-3 rounded font-bold transition"
+            >
+              Donate
+            </button>
+          </div>
+          <div
+            class="bg-stone-700 p-8 rounded-xl border-2 border-saffron-500 relative transform md:-translate-y-4 shadow-2xl"
+          >
+            <div
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-saffron-500 text-white px-4 py-1 rounded-full text-xs font-bold tracking-wide"
+            >
+              MOST POPULAR
             </div>
-            
-            <div class="flex justify-center gap-4 text-3xl text-stone-400">
-                <i class="fab fa-cc-visa hover:text-white transition"></i>
-                <i class="fab fa-cc-mastercard hover:text-white transition"></i>
-                <i class="fab fa-google-pay hover:text-white transition"></i>
-                <i class="fas fa-university hover:text-white transition"></i>
-            </div>
+            <h3 class="text-2xl font-bold mb-2">Square Foot Seva</h3>
+            <div class="text-3xl text-saffron-400 font-bold mb-4">₹5,000</div>
+            <p class="text-sm text-stone-400 mb-6">
+              Sponsor the construction of 1 sq.ft of the temple hall.
+            </p>
+            <button
+              class="w-full bg-saffron-500 text-white hover:bg-saffron-600 py-3 rounded font-bold transition"
+            >
+              Donate
+            </button>
+          </div>
+          <div
+            class="bg-stone-700 p-8 rounded-xl border border-stone-600 hover:border-saffron-500 transition hover:bg-stone-650 cursor-pointer group"
+          >
+            <h3 class="text-2xl font-bold mb-2">Nitya Seva</h3>
+            <div class="text-3xl text-saffron-400 font-bold mb-4">₹21,000</div>
+            <p class="text-sm text-stone-400 mb-6">
+              Sponsor one full day of Deity worship and Bhoga.
+            </p>
+            <button
+              class="w-full bg-white text-stone-900 group-hover:bg-saffron-500 group-hover:text-white py-3 rounded font-bold transition"
+            >
+              Donate
+            </button>
+          </div>
         </div>
+
+        <div class="flex justify-center gap-4 text-3xl text-stone-400">
+          <i class="fab fa-cc-visa hover:text-white transition"></i>
+          <i class="fab fa-cc-mastercard hover:text-white transition"></i>
+          <i class="fab fa-google-pay hover:text-white transition"></i>
+          <i class="fas fa-university hover:text-white transition"></i>
+        </div>
+      </div>
     </section>
 
-
-<!-- //Google Map Section!!! -->
-    <section class="h-96 w-full grayscale hover:grayscale-0 transition duration-700">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14674.654326164227!2d88.552!3d23.246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8e727636e0539%3A0x6516627051515252!2sBirnagar%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!-- //Google Map Section!!! -->
+    <section
+      class="h-96 w-full grayscale hover:grayscale-0 transition duration-700"
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14674.654326164227!2d88.552!3d23.246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8e727636e0539%3A0x6516627051515252!2sBirnagar%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
     </section>
 
-
-<!-- //Footer Section!!! -->
+    <!-- //Footer Section!!! -->
     <footer class="bg-stone-900 text-stone-400 pt-16 pb-8 px-4">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 mb-12">
-            <div>
-                <h4 class="text-white font-serif text-xl font-bold mb-4">ISKCON Birnagar</h4>
-                <p class="text-sm mb-4">Dedicated to the lotus feet of Srila Bhaktivinoda Thakur and Srila Prabhupada.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-white hover:text-saffron-500 transition"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white hover:text-saffron-500 transition"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white hover:text-saffron-500 transition"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            
-            <div>
-                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#about" class="hover:text-saffron-500 transition">Our History</a></li>
-                    <li><a href="#events" class="hover:text-saffron-500 transition">Festival Calendar</a></li>
-                    <li><a href="#songs" class="hover:text-saffron-500 transition">Vaishnava Songs</a></li>
-                    <li><a href="#donate" class="hover:text-saffron-500 transition">Donate</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Contact</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><i class="fas fa-map-marker-alt w-5"></i> Birnagar, Nadia, West Bengal</li>
-                    <li><i class="fas fa-phone w-5"></i> +91 98765 43210</li>
-                    <li><i class="fas fa-envelope w-5"></i> info@iskconbirnagar.com</li>
-                </ul>
-            </div>
-
-            <div>
-                <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Newsletter</h4>
-                <form class="flex flex-col gap-2">
-                    <input type="email" placeholder="Your Email Address" class="bg-stone-800 border-none rounded p-2 text-white focus:ring-2 focus:ring-saffron-500">
-                    <button class="bg-saffron-500 text-white font-bold py-2 rounded hover:bg-saffron-600 transition">Subscribe</button>
-                </form>
-            </div>
+      <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <h4 class="text-white font-serif text-xl font-bold mb-4">
+            Birnagar Temple Project
+          </h4>
+          <p class="text-sm mb-4">
+            Dedicated to the lotus feet of Srila Bhaktivinoda Thakur and Srila
+            Prabhupada.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-saffron-500 transition"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-white hover:text-saffron-500 transition"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="text-white hover:text-saffron-500 transition"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
         </div>
-        
-        <div class="border-t border-stone-800 pt-8 text-center text-xs">
-            <p>&copy; 2023 ISKCON Birnagar. All rights reserved. | Built with Devotion.</p>
+
+        <div>
+          <h4
+            class="text-white font-bold mb-4 uppercase text-sm tracking-wider"
+          >
+            Quick Links
+          </h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#about" class="hover:text-saffron-500 transition"
+                >Our History</a
+              >
+            </li>
+            <li>
+              <a href="#events" class="hover:text-saffron-500 transition"
+                >Festival Calendar</a
+              >
+            </li>
+            <li>
+              <a href="#songs" class="hover:text-saffron-500 transition"
+                >Vaishnava Songs</a
+              >
+            </li>
+            <li>
+              <a href="#donate" class="hover:text-saffron-500 transition"
+                >Donate</a
+              >
+            </li>
+          </ul>
         </div>
+
+        <div>
+          <h4
+            class="text-white font-bold mb-4 uppercase text-sm tracking-wider"
+          >
+            Contact
+          </h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <i class="fas fa-map-marker-alt w-5"></i> Birnagar, Nadia, West
+              Bengal
+            </li>
+            <li><i class="fas fa-phone w-5"></i> +91 98765 43210</li>
+            <li><i class="fas fa-envelope w-5"></i> info@iskconbirnagar.com</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4
+            class="text-white font-bold mb-4 uppercase text-sm tracking-wider"
+          >
+            Newsletter
+          </h4>
+          <form class="flex flex-col gap-2">
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              class="bg-stone-800 border-none rounded p-2 text-white focus:ring-2 focus:ring-saffron-500"
+            />
+            <button
+              class="bg-saffron-500 text-white font-bold py-2 rounded hover:bg-saffron-600 transition"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-t border-stone-800 pt-8 text-center text-xs">
+        <p>
+          &copy; 2023 Birnagar Temple Project. All rights reserved. | Built with
+          Devotion.
+        </p>
+      </div>
     </footer>
 
     <script>
-        // Optional: Add simple fade-in on scroll
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
+      // Optional: Add simple fade-in on scroll
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('opacity-100', 'translate-y-0');
-                    entry.target.classList.remove('opacity-0', 'translate-y-10');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('section > div').forEach((el) => {
-            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
-            observer.observe(el);
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            entry.target.classList.remove("opacity-0", "translate-y-10");
+          }
         });
+      }, observerOptions);
+
+      document.querySelectorAll("section > div").forEach((el) => {
+        el.classList.add(
+          "transition-all",
+          "duration-1000",
+          "opacity-0",
+          "translate-y-10"
+        );
+        observer.observe(el);
+      });
     </script>
-</body>
+  </body>
 </html>
