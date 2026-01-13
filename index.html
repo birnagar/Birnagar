@@ -541,18 +541,116 @@
             @click.away="open = false"
             class="md:hidden bg-white/95 backdrop-blur-md border-t p-4 flex flex-col space-y-3 absolute w-full z-50 text-stone-800 shadow-xl rounded-b-xl"
           >
-            <a href="index.html" class="block font-bold text-saffron-600"
+            <a
+              href="index.html"
+              @click="open = false"
+              class="block font-bold text-saffron-600"
               >Home</a
             >
-            <a href="pages/about.html" class="block hover:text-saffron-600"
-              >About</a
-            >
-            <a href="pages/gallery.html" class="block hover:text-saffron-600"
+
+            <!-- ABOUT accordion -->
+            <div x-data="{ aOpen: false }" class="w-full">
+              <button
+                @click="aOpen = !aOpen"
+                class="w-full flex items-center justify-between text-left py-2 hover:text-saffron-600"
+              >
+                <span class="font-medium">About</span>
+                <i
+                  class="fas fa-chevron-down transition-transform"
+                  :class="{'rotate-180': aOpen}"
+                ></i>
+              </button>
+              <div
+                x-show="aOpen"
+                x-cloak
+                class="pl-4 mt-1 flex flex-col space-y-1"
+              >
+                <a
+                  href="pages/who.html"
+                  @click="open = false"
+                  class="block text-sm text-stone-700 hover:text-saffron-600"
+                  >Who is Bhaktivinod Thakur</a
+                >
+                <a
+                  href="pages/why.html"
+                  @click="open = false"
+                  class="block text-sm text-stone-700 hover:text-saffron-600"
+                  >Why build a Temple</a
+                >
+                <a
+                  href="pages/chairman.html"
+                  @click="open = false"
+                  class="block text-sm text-stone-700 hover:text-saffron-600"
+                  >Chairman's Message</a
+                >
+                <a
+                  href="pages/team.html"
+                  @click="open = false"
+                  class="block text-sm text-stone-700 hover:text-saffron-600"
+                  >Meet the Team</a
+                >
+              </div>
+            </div>
+
+            <!-- VISION accordion -->
+            <div x-data="{ vOpen: false }" class="w-full">
+              <button
+                @click="vOpen = !vOpen"
+                class="w-full flex items-center justify-between text-left py-2 hover:text-saffron-600"
+              >
+                <span class="font-medium">Vision</span>
+                <i
+                  class="fas fa-chevron-down transition-transform"
+                  :class="{'rotate-180': vOpen}"
+                ></i>
+              </button>
+              <div
+                x-show="vOpen"
+                x-cloak
+                class="pl-4 mt-1 flex flex-col space-y-1"
+              >
+                <a
+                  href="#"
+                  @click="open = false"
+                  class="block text-sm text-stone-700 hover:text-saffron-600"
+                  >Srila Prabhupada's Vision</a
+                >
+                <a
+                  href="#"
+                  @click="open = false"
+                  class="block text-sm text-stone-700 hover:text-saffron-600"
+                  >JPS Vision</a
+                >
+                <a
+                  href="#"
+                  @click="open = false"
+                  class="block text-sm text-stone-700 hover:text-saffron-600"
+                  >Founders Vision</a
+                >
+              </div>
+            </div>
+
+            <a
+              href="pages/gallery.html"
+              @click="open = false"
+              class="block py-2 hover:text-saffron-600"
               >Gallery</a
             >
-            <a href="pages/songs.html" class="block hover:text-saffron-600"
+            <a
+              href="pages/songs.html"
+              @click="open = false"
+              class="block py-2 hover:text-saffron-600"
               >Songs</a
             >
+
+            <div class="pt-2">
+              <a
+                href="pages/donate.html"
+                @click="open = false"
+                class="block text-center bg-cyan-600 hover:bg-red-600 text-white px-4 py-2 rounded font-bold shadow"
+                >Donate Now</a
+              >
+            </div>
           </div>
         </nav>
         <!-- End of Mobile Nav View -->
@@ -691,12 +789,12 @@
         </p>
 
         <div
-          class="flex justify-center items-start space-x-6 md:space-x-10 mb-16"
+          class="flex flex-wrap justify-center items-start gap-4 md:gap-10 mb-16"
         >
           <div class="flex flex-col items-center leading-none">
             <span
               id="days"
-              class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900"
+              class="text-4xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900"
               >000</span
             >
             <span
@@ -705,14 +803,14 @@
             >
           </div>
 
-          <span class="text-5xl md:text-7xl font-light text-saffron-500 mt-2"
+          <span class="text-3xl md:text-7xl font-light text-saffron-500 mt-2"
             >:</span
           >
 
           <div class="flex flex-col items-center leading-none">
             <span
               id="hours"
-              class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900"
+              class="text-4xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900"
               >00</span
             >
             <span
@@ -721,14 +819,14 @@
             >
           </div>
 
-          <span class="text-5xl md:text-7xl font-light text-saffron-500 mt-2"
+          <span class="text-3xl md:text-7xl font-light text-saffron-500 mt-2"
             >:</span
           >
 
           <div class="flex flex-col items-center leading-none">
             <span
               id="minutes"
-              class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900"
+              class="text-4xl md:text-8xl font-mono font-bold tracking-tighter text-amber-900"
               >00</span
             >
             <span
@@ -737,14 +835,14 @@
             >
           </div>
 
-          <span class="text-5xl md:text-7xl font-light text-saffron-500 mt-2"
+          <span class="text-3xl md:text-7xl font-light text-saffron-500 mt-2"
             >:</span
           >
 
           <div class="flex flex-col items-center leading-none">
             <span
               id="seconds"
-              class="text-6xl md:text-8xl font-mono font-bold tracking-tighter text-saffron-500"
+              class="text-4xl md:text-8xl font-mono font-bold tracking-tighter text-saffron-500"
               >00</span
             >
             <span

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Founder | Birnagar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="../assets/js/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body
+    class="text-stone-200 bg-orange-50 font-[googleSans]"
+    style="font-family: 'Google Sans Flex', sans-serif"
+  >
+    <div class="w-full overflow-hidden border-b border-stone-900/10 relative">
+      <div class="flex w-fit animate-marquee hover:pause py-2">
+        <span
+          class="whitespace-nowrap px-4 text-xs md:text-xs font-light italic tracking-wider text-stone-950"
+        >
+          <span class="font-bold">Chant:</span> Hare Krishna Hare Krishna
+          Krishna Krishna Hare Hare
+        </span>
+      </div>
+    </div>
+
+    <div class="relative z-10 flex flex-col h-full">
+      <nav
+        x-data="{ open: false }"
+        class="w-full transition-all duration-300 border-white/10"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-20 items-center">
+            <div class="flex-shrink-0 flex items-center gap-3 text-heading">
+              <div>
+                <h1 class="font-serif font-bold text-xl tracking-wide">
+                  Kirtan Seva Trust
+                </h1>
+                <p class="text-xs font-bold uppercase">
+                  Birnagar Temple Project
+                </p>
+              </div>
+            </div>
+
+            <div class="hidden md:flex space-x-8 items-center text-heading">
+              <a
+                href="../index.html"
+                class="font-medium pb-1 hover:text-orange-400 text-sm"
+                >HOME</a
+              >
+              <div class="relative group">
+                <button
+                  class="text-sm transition font-medium pb-1 nav-link-underline flex items-center gap-1 uppercase"
+                >
+                  ABOUT
+                  <i
+                    class="fas fa-chevron-down text-[10px] group-hover:rotate-180 transition-transform"
+                  ></i>
+                </button>
+                <div
+                  class="absolute left-0 mt-0 w-64 bg-stone-900/95 backdrop-blur-xl border border-stone-800 rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 py-3"
+                >
+                  <a
+                    href="./who.html"
+                    class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                    >Who is Bhaktivinod Thakur</a
+                  >
+                  <a
+                    href="./why.html"
+                    class="block px-6 py-2 text-stone-300 hover:bg-saffron-500/10 hover:text-saffron-400 text-xs font-medium transition"
+                    >Why build a Temple</a
+                  >
+                </div>
+              </div>
+              <a
+                href="./gallery.html"
+                class="text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline uppercase"
+                >GALLERY</a
+              >
+              <a
+                href="./songs.html"
+                class="text-sm hover:text-saffron-500 transition font-medium pb-1 nav-link-underline uppercase"
+                >SONGS</a
+              >
+              <a
+                href="./donate.html"
+                class="bg-cyan-600 hover:bg-red-600 text-sm text-white px-6 py-2 rounded font-bold transition shadow-lg transform hover:scale-105 uppercase"
+                >Donate Now</a
+              >
+            </div>
+
+            <div class="md:hidden flex items-center">
+              <button
+                @click="open = !open"
+                class="text-stone-800 hover:text-saffron-600 focus:outline-none"
+              >
+                <i class="fas fa-bars text-2xl"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        x-show="open"
+        @click.away="open = false"
+        class="md:hidden bg-white/95 backdrop-blur-md border-t p-4 flex flex-col space-y-3 absolute w-full z-50 text-stone-800 shadow-xl rounded-b-xl"
+      >
+        <a
+          href="../index.html"
+          @click="open = false"
+          class="block font-bold text-saffron-600"
+          >Home</a
+        >
+        <div x-data="{ aOpen: false }" class="w-full">
+          <button
+            @click="aOpen = !aOpen"
+            class="w-full flex items-center justify-between text-left py-2 hover:text-saffron-600"
+          >
+            <span class="font-medium">About</span>
+            <i
+              class="fas fa-chevron-down transition-transform"
+              :class="{'rotate-180': aOpen}"
+            ></i>
+          </button>
+          <div x-show="aOpen" x-cloak class="pl-4 mt-1 flex flex-col space-y-1">
+            <a
+              href="./who.html"
+              @click="open = false"
+              class="block text-sm text-stone-700 hover:text-saffron-600"
+              >Who is Bhaktivinod Thakur</a
+            >
+            <a
+              href="./why.html"
+              @click="open = false"
+              class="block text-sm text-stone-700 hover:text-saffron-600"
+              >Why build a Temple</a
+            >
+          </div>
+        </div>
+        <div x-data="{ vOpen: false }" class="w-full">
+          <button
+            @click="vOpen = !vOpen"
+            class="w-full flex items-center justify-between text-left py-2 hover:text-saffron-600"
+          >
+            <span class="font-medium">Vision</span>
+            <i
+              class="fas fa-chevron-down transition-transform"
+              :class="{'rotate-180': vOpen}"
+            ></i>
+          </button>
+          <div x-show="vOpen" x-cloak class="pl-4 mt-1 flex flex-col space-y-1">
+            <a
+              href="#"
+              @click="open = false"
+              class="block text-sm text-stone-700 hover:text-saffron-600"
+              >Srila Prabhupada's Vision</a
+            >
+            <a
+              href="#"
+              @click="open = false"
+              class="block text-sm text-stone-700 hover:text-saffron-600"
+              >JPS Vision</a
+            >
+          </div>
+        </div>
+        <a
+          href="./gallery.html"
+          @click="open = false"
+          class="block py-2 hover:text-saffron-600"
+          >Gallery</a
+        >
+        <a
+          href="./songs.html"
+          @click="open = false"
+          class="block py-2 hover:text-saffron-600"
+          >Songs</a
+        >
+        <div class="pt-2">
+          <a
+            href="./donate.html"
+            @click="open = false"
+            class="block text-center bg-cyan-600 hover:bg-red-600 text-white px-4 py-2 rounded font-bold shadow"
+            >Donate Now</a
+          >
+        </div>
+      </div>
+
+      <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="text-4xl font-serif font-bold text-stone-900 mb-6">
+          Founder
+        </h1>
+        <p class="text-stone-600">
+          Content about the founder goes here. Replace with real content when
+          available.
+        </p>
+      </main>
+
+      <footer class="bg-stone-900 text-stone-400 pt-16 pb-8 px-4">
+        <div class="border-t border-stone-800 pt-8 text-center text-xs">
+          <p>&copy; 2023 Birnagar. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
